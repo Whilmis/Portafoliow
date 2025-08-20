@@ -1,0 +1,130 @@
+.skills {
+  padding: var(--space-xl) 0;
+}
+
+.skills-desc {
+  max-width: 800px;
+  margin: 0 auto var(--space-lg);
+  text-align: center;
+  color: #a9b0b5;
+}
+
+/* Layout de dos columnas */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+}
+
+/* -------- Columna: Proceso (timeline) -------- */
+.skills-process {
+  position: relative;
+  padding-left: 20px;
+}
+
+.skills-process::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--color-primary), transparent);
+  opacity: 0.3;
+}
+
+.process-item {
+  display: grid;
+  grid-template-columns: 16px 1fr;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.process-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  background: var(--color-primary);
+  box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.15);
+  margin-top: 4px;
+}
+
+.process-content h4 {
+  color: var(--color-primary);
+  margin-bottom: 6px;
+}
+
+.process-content p {
+  color: var(--color-text);
+  opacity: 0.9;
+}
+
+/* -------- Columna: Barras -------- */
+.skills-bars {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.skill {
+  width: 100%;
+}
+
+.skill-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.skill-label {
+  font-weight: 600;
+}
+
+.skill-value {
+  color: #cdd3d8;
+  font-variant-numeric: tabular-nums;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--color-primary), #34d399);
+  border-radius: inherit;
+  transition:
+    width 1100ms cubic-bezier(0.22, 1, 0.36, 1) var(--skill-delay, 0ms),
+    filter 300ms ease;
+  filter: saturate(0.95);
+}
+
+.skill-fill.is-inview {
+  width: var(--skill-target, 0%);
+}
+
+/* Hover sutil (no interfiere con animación) */
+.skill:hover .skill-fill {
+  filter: saturate(1.1);
+}
+
+/* -------- Responsive -------- */
+@media (max-width: 992px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-process {
+    padding-left: 12px;
+  }
+
+  .skills-process::before {
+    left: 6px;
+  }
+}

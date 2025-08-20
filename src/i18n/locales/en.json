@@ -1,0 +1,388 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "skills": "Skills",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm Whilmis",
+     "roles": ["Developer", "Web Designer"],
+    "ctaPortfolio": "View Portfolio",
+    "ctaContact": "Contact Me"
+  },
+  "services": {
+    "title": "What I Offer",
+    "description": "My goal is to deliver effective solutions tailored to each client’s specific needs. With a focus on quality, communication, and efficiency, I provide a reliable experience that generates real results. Whether through web development, process optimization, or intuitive interface design, my commitment is to deliver a service that creates lasting value.",
+    "cards": {
+      "webDesign": {
+        "title": "Web Design",
+        "front": "I provide tailored web design solutions focused on building visually appealing, functional, and fully responsive websites.",
+        "backTitle": "Expert Consulting",
+        "backText": "I offer specialized guidance to help you make strategic decisions with clarity and confidence."
+      },
+      "development": {
+        "title": "Development",
+        "front": "I build custom digital products focused on functionality, scalability, and efficiency.",
+        "backTitle": "Innovation & Scalability",
+        "backText": "I turn your ideas into robust digital solutions, ready to grow and adapt to your business needs."
+      },
+      "seo": {
+        "title": "SEO/Marketing",
+        "front": "I boost your project’s visibility and rankings with effective, ethical SEO strategies. I analyze your digital presence and optimize content and site structure.",
+        "backTitle": "Strategies that Connect",
+        "backText": "I craft personalized action plans to reach your target audience, increase qualified traffic, and strengthen your brand online."
+      },
+      "mobile": {
+        "title": "Mobile Apps",
+        "front": "I design and develop intuitive, efficient mobile applications tailored to user needs. For iOS, Android, or cross-platform solutions, I create mobile experiences that blend performance, usability, and attractive design.",
+        "backTitle": "Experiences that Inspire",
+        "backText": "I transform your ideas into dynamic, engaging apps—combining technology, functionality, and an exceptional user experience."
+      }
+    }
+  },
+  "skills": {
+    "title": "My Skills",
+    "description": "From initial planning to final delivery, I apply a set of capabilities that help shape ideas, solve problems, and build digital solutions that work and stand out.",
+    "process": [
+      {
+        "title": "Analysis & Planning",
+        "text": "I understand client needs and define project objectives to structure an effective solution from the start."
+      },
+      {
+        "title": "Design (UI/UX)",
+        "text": "I create intuitive, attractive interfaces focused on user experience, using tools like Figma and Illustrator."
+      },
+      {
+        "title": "Web Development",
+        "text": "I turn designs into functional websites or apps using modern technologies such as HTML, CSS, JavaScript, React, and Node."
+      },
+      {
+        "title": "SEO Optimization & Digital Marketing",
+        "text": "I apply best practices for search engine visibility and digital strategies to increase project exposure."
+      },
+      {
+        "title": "Delivery & Maintenance",
+        "text": "I ensure the final product works correctly and provide support for adjustments, updates, or scalability."
+      }
+    ],
+    "bars": [
+      { "label": "HTML5 / CSS3", "value": 95 },
+      { "label": "React", "value": 95 },
+      { "label": "Node", "value": 82 },
+      { "label": "UX/UI Design", "value": 85 },
+      { "label": "Photoshop", "value": 86 },
+      { "label": "Illustrator", "value": 84 },
+      { "label": "SEO", "value": 83 },
+      { "label": "Project Management", "value": 78 }
+    ]
+  },
+"portfolio": {
+    "title": "Portfolio",
+    "description": "Some of my projects in development and design.",
+    "filters": { "all": "All", "reactNode": "React / Node.js", "uxui": "UX / UI" },
+    "categories": { "reactNode": "React / Node.js", "uxui": "UX / UI" },
+    "labels": { "year": "Year", "role": "Role", "stack": "Tech stack" },
+    "sections": {
+      "overview": "Overview",
+      "challenge": "Challenge",
+      "solution": "Solution",
+      "features": "Features",
+      "process": "Process",
+      "results": "Results",
+      "gallery": "Gallery",
+      "related": "Related projects"
+    },
+    "viewProject": "Detail ",
+    "openDemo": "Project",
+    "openRepo": "Open repository",
+    "openFigma": "Open in Figma",
+    "items": {
+      "planning-scheduling": {
+  "title": "Planning & Scheduling",
+  "short": "Operational planning system with drag-and-drop for AB InBev.",
+  "long": "I worked on the frontend team building an operations planner in React. The app organizes large volumes of items by week/day using drag & drop, with Redux for state management and synchronization with corporate systems. The UI focuses on clarity, performance, and a smooth interactive experience.",
+  "challenge": "Centralize weekly planning for thousands of items, reduce manual friction, and keep teams consistent.",
+  "solution": "Weekly board with day columns, side backlog and drag-and-drop assignments; global state via Redux, client-side business validations, and sync with .NET services (including SAP integration).",
+  "features": [
+    "Drag & drop across days and weeks",
+    "Backlog and per-day item counters",
+    "Advanced filters and extended view",
+    "History and safe saving",
+    "Sync with SAP and .NET services",
+    "Responsive UI for desktop and mobile",
+    "Status messaging (loading, success, error)"
+  ],
+  "process": [
+    "Rules analysis and use cases",
+    "UI design and functional prototypes",
+    "Global state management with Redux",
+    "Integration with C#/.NET API and error handling",
+    "UAT testing and performance tuning",
+    "Deployment and adoption support"
+  ],
+  "results": [
+    { "value": "+25%", "label": "Planning speed" },
+    { "value": "-30%", "label": "Manual assignment errors" },
+    { "value": "High", "label": "Pilot team adoption" }
+  ]
+}
+,
+     "domibyte": {
+  "title": "DomiByte",
+  "short": "Corporate multilingual website with modern design and functional contact form.",
+  "long": "I designed and developed DomiByte's corporate website using React and Vite, with a modern and fully responsive design. The site includes sections for home, services, clients, contact, and footer, featuring bilingual support (Spanish and English) through a custom i18n system, smooth navigation animations, and a contact form integrated with EmailJS to send messages directly to the corporate email.",
+  "challenge": "Create a professional, lightweight, and fast website that reflects DomiByte's identity, facilitates client communication, and can be easily managed.",
+  "solution": "Built with React and Vite, styled with pure CSS for optimal performance, smooth navigation animations, a multilingual system using Context API, and a contact form powered by EmailJS for direct email delivery.",
+  "features": [
+    "Modern and responsive design",
+    "Multilingual system (Spanish/English)",
+    "Smooth scroll animations and navigation",
+    "Sections: Home, About, Services, Clients, Contact",
+    "Functional contact form with EmailJS",
+    "Optimized for fast loading",
+    "Modular and scalable codebase",
+    "Implementation and quality assurance through cross-device testing"
+  ],
+  "process": [
+    "Defining file structure and component architecture",
+    "Designing each section with pure CSS",
+    "Implementing a custom i18n system",
+    "Integrating smooth scroll animations and transitions",
+    "Connecting the contact form with EmailJS",
+    "Responsive testing, optimization, and deployment"
+  ],
+  "results": [
+    { "value": "100%", "label": "Mobile and desktop compatibility" },
+    { "value": "2", "label": "Supported languages (ES/EN)" },
+    { "value": "0", "label": "Extra dependencies for i18n and animations" }
+  ]
+},
+"Emaus-platform": {
+  "title": "Emaus Management Platform",
+  "short": "Web app to manage members, activities and sales with an admin panel.",
+  "description": "I built a React + Node platform that centralizes member records, activity calendar and registrations, plus a shop module with catalog, cart and inventory. It replaces manual WhatsApp/paper flows with digital processes, notifications and role-based control.",
+  "highlights": [
+    "Member/admin panels with role-based permissions",
+    "JWT authentication and secure sessions",
+    "Interactive calendar & online registrations",
+    "Catalog, cart and inventory control",
+    "In-app notifications and attendance tracking",
+    "Responsive, accessible UI"
+  ],
+  "features": [
+    "Information management: profiles, activity and purchase history",
+    "Activities: calendar, registrations and attendee lists",
+    "Store: product catalog, cart and sales reports",
+    "Automated inventory with alerts",
+    "Security: credentials, roles and backups",
+    "Mobile & desktop responsive"
+  ],
+  "process": [
+    "Discovery and current-process mapping",
+    "Architecture: React (SPA) + Node/Express (API) + MongoDB",
+    "UI/UX design, states and empty-states",
+    "JWT auth and role-based authorization",
+    "Modules implementation (members, events, store, inventory)",
+    "Functional/UAT testing and containerized deployment"
+  ],
+  "problem": "Operations relied on manual processes: informal scheduling, non-centralized registrations and sales without inventory control, leading to delays and lack of traceability.",
+  "impact": [
+    "Centralized data and automated key tasks",
+    "Clearer, timely registrations and comms",
+    "Inventory and sales traceability",
+    "Foundation for reporting and decision-making"
+  ],
+  "cta": {
+    "open": "Open project",
+    "repo": "View repository",
+    "demo": "View demo"
+  }
+}
+
+,
+     "aether-uif": {
+  "title": "Aether UI Figma ",
+  "short": "Hybrid design system: clarity, structure, and elegance.",
+  "long": "Aether UI is a design system created in Figma that blends the precision of Material UI with the visual sophistication of iOS aesthetics. It’s crafted for modern web products, with a focus on accessibility, modularity, scalability, and consistency.",
+  "challenge": "Unifying visual standards without sacrificing creative freedom or flexibility in scalable products.",
+  "solution": "Definition of universal design principles, a balanced and expressive color palette, and customizable visual components with semantic consistency.",
+  "features": [
+    "Complementary typefaces: Roboto + Playfair Display",
+    "Dual palette: Purple as base, deep blue as accent",
+    "Reusable modular components",
+    "Documentation ready for Zeroheight"
+  ],
+  "process": [
+    "Definition of core design principles",
+    "Exploration of palette and contrast",
+    "Visual testing in dark and light contexts",
+    "Establishing typographic and spacing scales",
+    "Figma export and category-based organization"
+  ],
+  "results": [
+    { "value": "+100%", "label": "Visual consistency across products" },
+    { "value": "-40%", "label": "Time spent on visual decisions" },
+    { "value": "+1", "label": "System adopted by DomiByte" }
+  ]
+}
+,
+     
+  "aether-ui": {
+    "title": "Aether UI",
+    "short": "Modular web design system with style guide, reusable components, and multilingual support.",
+    "long": "Aether UI is a complete design system built with React and Vite. It includes design tokens (colors, typography, shadows), a library of customizable UI components, documentation pages, a visual style and accessibility guide, and UX/UI navigation. It supports multiple languages with i18next and offers ready-to-copy examples in JSX and CSS.",
+    "challenge": "Build a reusable visual system that ensures design consistency, speeds up frontend development, and allows clear documentation.",
+    "solution": "Modular and centralized structure combining styles, components, and guides. JSON-based translations, section navigation with React Router, and visual interactive examples for developers.",
+    "features": [
+      "Design tokens (colors, sizes, weights, backgrounds)",
+      "Reusable components: buttons, cards, dialogs, text fields",
+      "Live example and code view per component",
+      "Multilingual support with i18next",
+      "Style guides: typography, color, accessibility, tone",
+      "Floating menu for section navigation",
+      "Fully responsive and backend-free"
+    ],
+    "process": [
+      "Definition of tokens and base styles",
+      "Scalable folder structure setup",
+      "Creation and documentation of UI components",
+      "Navigation and i18n implementation",
+      "Code viewer integration for JSX + CSS",
+      "Styling adjustments and testing on desktop/mobile"
+    ],
+    "results": [
+      { "value": "100%", "label": "Visual consistency across components" },
+      { "value": "2", "label": "Supported languages (EN/ES)" },
+      { "value": "0", "label": "Dependencies for backend or external UI libraries" }
+    ]
+  },
+
+  "developer-portfolio": {
+  "title": "Web Developer Portfolio",
+  "short": "Personal design to showcase profile and services.",
+  "long": "This personal portfolio was designed to highlight my web development services, technical skills, and visual style. It includes sections for introduction, services, contact, and social integration. All accompanying digital illustrations were created by me, layer by layer, in Adobe Illustrator. While some are not currently in use on the live site, they demonstrate my ability to design and produce original visual assets—supporting my approach to functional aesthetics in frontend development.",
+  "challenge": "Organizing all personal and professional information in one page without losing visual clarity.",
+  "solution": "Well-structured sections using typographic hierarchy, functional icons, and a focused contact form.",
+  "features": [
+    "Hero section with call to action",
+    "Services and skillset section",
+    "Functional contact form",
+    "Responsive and accessible design",
+    "Social media integration"
+  ],
+  "process": [
+    "Content gathering and curation",
+    "Section layout and information flow",
+    "Figma prototyping",
+    "Visual testing across screen sizes"
+  ],
+  "results": [
+    { "value": "+1", "label": "Fully functional personal portfolio" },
+    { "value": "+100%", "label": "Improved professional presentation" },
+    { "value": "-50%", "label": "Response time to inquiries" }
+  ]
+}
+
+
+}
+
+    
+  },
+  "labels": { "year": "Year", "role": "Role", "stack": "Tech stack" },
+"sections": {
+  "overview": "Overview",
+  "challenge": "Challenge",
+  "solution": "Solution",
+  "features": "Features",
+  "process": "Process",
+  "results": "Results",
+  "gallery": "Gallery",
+  "related": "Related projects"
+},
+  "items": {
+  "school-platform": {
+    "title": "School Management Platform",
+    "short": "Full-stack app for academic control with React and Node.js.",
+    "long": "Academic management app with student records, grades, attendance, and admin/teacher dashboards. Modular architecture, JWT auth, roles, and real-time panels."
+  },
+  "ecommerce-suite": {
+    "title": "E-commerce Suite (API + Frontend)",
+    "short": "Online store with cart, payments, and admin panel.",
+    "long": "End-to-end e-commerce: catalog, search, persistent cart, checkout with payment gateway, and inventory/orders dashboard. SEO/performance-optimized SSR/SPA."
+  },
+  "personal-finance-app": {
+    "title": "Personal Finance App",
+    "short": "UX/UI design for expense management mobile app.",
+    "long": "Onboarding flows, expense categorization, goals, reports, and alerts. Consistent design system, accessibility patterns, and clickable prototypes."
+  },
+  "analytics-dashboard": {
+    "title": "Analytics Dashboard",
+    "short": "Clean interface for metrics and reports.",
+    "long": "Dashboard design with comparative charts, advanced filters, empty states and feedback. Focus on visual hierarchy and data readability."
+  }
+},
+
+
+"viewProject": "View details",
+"openDemo": "Open project",
+"openRepo": "Open repository",
+"openFigma": "Open in Figma"
+,
+ "tools": {
+  "title": "Software for Projects",
+  "items": {
+    "vscode":      { "title": "Visual Studio Code", "text": "Lightweight, powerful code editor for multi-language development and debugging." },
+    "sqlserver":   { "title": "SQL Server", "text": "Relational modeling, T-SQL, stored procedures, and query performance tuning." },
+    "mongodb":     { "title": "MongoDB", "text": "Document modeling, aggregations, indexing, and collection performance." },
+    "postman":     { "title": "Postman", "text": "REST API design & testing, collections, environment variables, and automation." },
+    "illustrator": { "title": "Illustrator", "text": "Professional tool for illustrations, logos, and vector graphics." },
+    "photoshop":   { "title": "Photoshop", "text": "Photo retouching, composition, and graphic assets for interfaces." },
+    "figma":       { "title": "Figma", "text": "Collaborative interface design and real-time prototyping." }
+  }
+}
+,
+  "about": {
+    "title": "About Me",
+    "text": [
+      "I am a professional Full Stack Developer specialized in Frontend with extensive experience building intuitive, scalable, user-centric web applications. My background includes strong knowledge in systems, graphic design, and UX/UI, enabling me to deliver comprehensive digital solutions that are visually appealing and functionally efficient.",
+      "Beyond my technical skills, I’ve complemented my profile with digital marketing and project management, allowing me to understand products from a strategic perspective...",
+      "I stand out for adaptability, analytical thinking, and strong attention to detail. I value multidisciplinary teamwork and clear communication...",
+      "I’m constantly looking for projects where I can blend technical, visual, and strategic thinking to create memorable, results-oriented digital experiences."
+    ]
+  },
+
+
+  
+  "contact": {
+    "title": "Contact Me",
+    "subtitle": "Let’s work together—get in touch!",
+    "text": "Great ideas start with a good conversation. If you have a project in mind or just a spark of inspiration, I’m here to turn it into something real. How about building it together? Write to me—the first step is already taken.",
+    "phoneLabel": "Contact phone",
+    "phone": "Responsible phone: (+34) 607 197 493",
+    "emailLabel": "Email",
+    "email": "Responsible email: whilmisweb@gmail.com",
+      "form": {
+    "name": "Name",
+    "phone": "Phone",
+    "message": "Message",
+    "send": "Send",
+    "sending": "Sending…",
+    "sent": "Message sent. Thank you!",
+    "validation": "Please enter your name and a message (10+ characters).",
+    "failed": "Could not send. Please try again later."
+  }
+  },
+
+  "footer": {
+  "tagline": "Let’s build something great.",
+  "navTitle": "Sitemap",
+  "contactTitle": "Contact",
+  "socialTitle": "Social",
+  "backToTop": "Back to top",
+  "rights": "All rights reserved."
+}
+
+}

@@ -1,0 +1,27 @@
+:root {
+  /* Colores */
+  --color-bg: #0f1115;
+  --color-text: #e5e7eb;
+  --color-primary: #22c55e;
+  --color-primary-dark: #1da94d;
+  --color-border: rgba(255, 255, 255, 0.1);
+
+  /* Tipografía */
+  --font-main: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  --font-size-base: 16px;
+
+  /* Espaciados */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 48px;
+
+  /* Bordes */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 999px;
+
+  /* Sombra */
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.25);
+}

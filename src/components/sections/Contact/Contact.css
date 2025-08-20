@@ -1,0 +1,96 @@
+.contact {
+  position: relative;
+  padding: 80px 0;
+  background: var(--surface-1, #121212);
+  overflow: hidden;
+}
+
+.contact::before {
+  /* patrón sutil (puedes reemplazar por tu patrón de tools) */
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(1200px 400px at 20% 10%, rgba(0,255,140,0.06), transparent 60%),
+              radial-gradient(900px 400px at 80% 90%, rgba(0,255,140,0.04), transparent 60%);
+  opacity: 1;
+}
+
+.contact-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 48px;
+}
+
+@media (max-width: 960px) {
+  .contact-grid { grid-template-columns: 1fr; }
+}
+
+.section-title { font-size: clamp(28px, 4vw, 42px); line-height: 1.1; margin-bottom: 12px; }
+.section-sub   { color: #9aa0a6; margin-bottom: 8px; }
+.section-desc  { color: #cfd3d7; margin-bottom: 24px; }
+
+.contact-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.contact-list .icon { margin-right: 8px; }
+
+.contact-form {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 22px;
+  backdrop-filter: blur(6px);
+  display: grid;
+  gap: 14px;
+}
+
+.field { display: grid; gap: 8px; }
+.field span { font-size: 14px; color: #cfd3d7; }
+
+input[type="text"], input[type="tel"], textarea {
+  width: 100%;
+  background: #0f0f10;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 12px;
+  padding: 12px 14px;
+  color: #fff;
+  outline: none;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #00e676;
+  box-shadow: 0 0 0 3px rgba(0,230,118,0.15);
+}
+
+textarea { resize: vertical; min-height: 120px; }
+
+.btn-send {
+  margin-top: 6px;
+  border: 0;
+  border-radius: 14px;
+  padding: 12px 18px;
+  color: #0a0a0a;
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(90deg, #00ff88, #18ffaa);
+  transition: transform .08s ease, box-shadow .2s ease, filter .2s ease;
+}
+
+.btn-send:hover { transform: translateY(-1px); box-shadow: 0 6px 22px rgba(0,255,160,0.2); }
+.btn-send:disabled { filter: grayscale(0.5); cursor: not-allowed; }
+
+.form-status { min-height: 22px; }
+.form-status .ok  { color: #2ee59d; margin-top: 6px; }
+.form-status .err { color: #ff6b6b; margin-top: 6px; }
+
+/* Honeypot escondido */
+.hp {
+  position: absolute !important;
+  left: -10000px !important;
+  top: -10000px !important;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  pointer-events: none;
+}
