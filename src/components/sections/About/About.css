@@ -13,9 +13,13 @@
 }
 
 .about-image img {
-  max-width: 100%;
+  max-width: 60%;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-md);
+  -webkit-border-radius: var(--radius-md);
+  -moz-border-radius: var(--radius-md);
+  -ms-border-radius: var(--radius-md);
+  -o-border-radius: var(--radius-md);
 }
 
 .about-content {

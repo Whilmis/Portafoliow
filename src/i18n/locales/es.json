@@ -158,34 +158,64 @@
     { "value": "Alta", "label": "Adopción del equipo piloto" }
   ]
 },
-      "domibyte": {
-  "title": "DomiByte",
-  "short": "Sitio web corporativo multiidioma con diseño moderno y formulario de contacto funcional.",
-  "long": "Diseñé y desarrollé la página corporativa de DomiByte utilizando React y Vite, con un diseño responsivo y moderno. El sitio incluye secciones de inicio, servicios, clientes, contacto y pie de página, con soporte multiidioma (español e inglés) mediante un sistema i18n personalizado, animaciones de navegación suave y un formulario de contacto integrado con EmailJS.",
-  "challenge": "Crear un sitio web profesional, ligero y rápido que refleje la identidad de DomiByte, facilite el contacto con clientes y pueda ser gestionado fácilmente.",
-  "solution": "Implementación en React con Vite, CSS puro para estilos optimizados, navegación fluida con animaciones, sistema multiidioma con Context API, y formulario de contacto que envía mensajes directamente al correo corporativo mediante EmailJS.",
+    "scuti": {
+  "title": "Scuti",
+  "short": "Ecosistema de crecimiento (Fase 1) con enfoque en UI/UX y servicios de IA.",
+  "long": "Diseñé y desarrollé la experiencia de usuario (UI/UX) y la arquitectura técnica de Scuti. Actualmente, el proyecto se encuentra en su primera fase (MVP), centrada en una interfaz de alto rendimiento integrada con APIs de IA y automatización de correos. Esta base sólida está diseñada para escalar hacia un ecosistema completo de validación on-chain (Web3), el cual se encuentra actualmente en proceso de desarrollo.",
+  "challenge": "Diseñar una identidad visual disruptiva y una arquitectura escalable que permita la transición fluida de una plataforma web tradicional a una solución descentralizada.",
+  "solution": "Creación del diseño UI/UX desde cero y desarrollo con React/TypeScript. Se implementó una lógica de servicios modulares que facilita la futura integración de contratos inteligentes sin comprometer la fase actual.",
   "features": [
-    "Diseño moderno y responsive",
-    "Sistema multiidioma (español/inglés)",
-    "Animaciones de scroll y navegación suave",
-    "Secciones: Inicio, About, Servicios, Clientes, Contacto",
-    "Formulario de contacto funcional con EmailJS",
-    "Optimización para carga rápida",
-    "Código modular y escalable",
-    "Implementación y control de calidad mediante pruebas en distintos dispositivos"
+    "Diseño UI/UX original y prototipado de alta fidelidad",
+    "Fase 1: MVP funcional con React y TypeScript",
+    "Integración de servicios de IA para procesamiento de datos",
+    "Automatización de comunicación vía Gmail/EmailJS",
+    "Arquitectura escalable preparada para Web3",
+    "Roadmap activo: Integración Blockchain en desarrollo",
+    "Optimización de rendimiento y SEO técnico",
+    "Interfaz fluida con animaciones personalizadas"
   ],
   "process": [
-    "Definición de estructura de archivos y componentes",
-    "Diseño de cada sección con CSS puro",
-    "Implementación de sistema i18n personalizado",
-    "Integración de animaciones de scroll y transiciones",
-    "Conexión del formulario con EmailJS",
-    "Pruebas responsive, optimización y despliegue"
+    "Investigación y diseño de la experiencia de usuario (UI/UX)",
+    "Desarrollo de la estructura base y tipado con TypeScript",
+    "Integración de servicios externos (IA y Mensajería)",
+    "Planificación y preparación del entorno para Web3 (Fase 2)",
+    "Pruebas de usabilidad y optimización de carga",
+    "Lanzamiento de la Fase 1 y desarrollo de nuevas funcionalidades"
   ],
   "results": [
-    { "value": "100%", "label": "Compatibilidad móvil y desktop" },
-    { "value": "2", "label": "Idiomas soportados (ES/EN)" },
-    { "value": "0", "label": "Dependencias extra para i18n y animaciones" }
+    { "value": "Fase 1", "label": "Completada" },
+    { "value": "UI/UX", "label": "Diseño propio" },
+    { "value": "Progreso", "label": "Roadmap Web3 activo" }
+  ]
+},
+"iahostel": {
+  "title": "IAHostel",
+  "short": "Plataforma de digitalización 360º para hostelería con integración de agentes de IA.",
+  "long": "Lideré el desarrollo técnico de IAHostel, una agencia especializada en la transformación digital del sector gastronómico (restaurantes, bares y cafés). El proyecto ofrece un ecosistema integral que incluye desarrollo web de alto rendimiento, menús QR interactivos y la implementación de agentes de IA personalizados que gestionan reservas y pedidos 24/7 a través de WhatsApp y la web, optimizando drásticamente la operativa de los negocios.",
+  "challenge": "Desarrollar una solución tecnológica que simplifique la gestión compleja de la hostelería, integrando IA y herramientas de reserva en una plataforma rápida y fácil de usar para propietarios sin conocimientos técnicos.",
+  "solution": "Se construyó una arquitectura robusta utilizando Next.js para garantizar velocidad y SEO local. Se integraron modelos de lenguaje avanzados para crear asistentes virtuales capaces de entender el lenguaje natural de los clientes para reservas y consultas.",
+  "features": [
+    "Desarrollo web optimizado para SEO local y conversión",
+    "Agentes de IA para gestión automática de reservas (WhatsApp/Web)",
+    "Integración de sistemas de pedidos online y Menús QR",
+    "Dashboard de gestión de contenido para propietarios",
+    "Optimización de presencia en Google Maps",
+    "Diseño ultra-responsive para dispositivos móviles",
+    "Automatización de flujo de trabajo para recepción de clientes",
+    "Arquitectura modular para escalabilidad de servicios"
+  ],
+  "process": [
+    "Investigación de puntos críticos en la gestión de hostelería",
+    "Diseño de interfaces enfocadas en la conversión y usabilidad",
+    "Desarrollo del frontend y backend con Next.js y Node.js",
+    "Entrenamiento e integración de agentes de IA con OpenAI",
+    "Conexión de APIs de mensajería (WhatsApp Business)",
+    "Pruebas de carga y despliegue optimizado en producción"
+  ],
+  "results": [
+    { "value": "24/7", "label": "Gestión de reservas automática" },
+    { "value": "100%", "label": "Enfoque en sector hostelería" },
+    { "value": "AI", "label": "Agentes integrados con éxito" }
   ]
 }
 ,

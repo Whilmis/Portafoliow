@@ -52,7 +52,7 @@
 
 .hero-photo {
   display: block;
-  width: clamp(380px, 56vw, 920px); /* más grande */
+  width: clamp(380px, 56vw, 700px); /* más grande */
   height: auto;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-md);

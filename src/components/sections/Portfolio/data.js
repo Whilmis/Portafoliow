@@ -2,21 +2,27 @@
 // Solo info neutral que no cambia por idioma.
 import planin1 from "../../../assets/img/ChatGPT Image 13 ago 2025, 03_59_07 p.m..png"
 import planin2 from "../../../assets/img/Planning.jpg"
-import domibyte1 from "../../../assets/img/Header.png"
-import domibyte2 from "../../../assets/img/about.jpg"
-import domibyte3 from "../../../assets/img/services.jpg"  
+import scuti1 from "../../../assets/img/scuti1.png"
+import scuti2 from "../../../assets/img/scuti2.png"
+import scuti3 from "../../../assets/img/scuti3.png"
+import scuti4 from "../../../assets/img/scuti4.png"
+import scuti5 from "../../../assets/img/scuti5.png"
+import iahostel1 from "../../../assets/img/iahostel1.png"
+import iahostel2 from "../../../assets/img/iahostel2.png"
+import iahostel3 from "../../../assets/img/iahostel3.png"
+import iahostel4 from "../../../assets/img/iahostel4.png"
+import iahostel5 from "../../../assets/img/iahostel4.png"
 import aether1 from "../../../assets/img/aether1.png"
 import aether2 from "../../../assets/img/aether2.png"
 import aether3 from "../../../assets/img/aether3.png"
-import eatherF from "../../../assets/img/Main.jpg"
-import eatherF2 from "../../../assets/img/aetherf2.png"
+import aether4 from "../../../assets/img/aetherf2.png"
+
+
 import eatherF3 from "../../../assets/img/eatherf3.png"
 import portafolio from "../../../assets/img/portafolio.png"
 import portafolio2 from "../../../assets/img/portafolio2.png"
 import portafolio3 from "../../../assets/img/portafolio3.png"
-import emaus1 from "../../../assets/img/pantalla1.png"
-import emaus2 from "../../../assets/img/Pantalla2.jpg"
-import emaus3 from "../../../assets/img/pantalla4.jpg"
+
 
 export const projects = [
 {
@@ -32,34 +38,61 @@ export const projects = [
    demo: "https://dev.azure.com/ab-inbev-maz/MAZ_Supply_P_and_S/_git/plan-scheduling-frontend/pullrequest/5655",
   // (sin demo/figma; es interno)
 },
- {
-  id: 2, // cámbialo si ya lo usas
-  slug: "domibyte",
-  category: "react-node",
+{
+  id: 2, // Asegúrate de que este ID sea único en tu array de proyectos
+  slug: "scuti",
+  category: "web3-ai", // Categoría que refleja IA y Blockchain
   year: 2025,
-  role: ["Frontend", "UI/UX"],
+  role: ["Frontend", "UI/UX", "Web3 Integration"],
   tech: [
     "React",
-    "Vite",
-    "CSS",
-    "EmailJS",
-    "Context API",
-    "i18n (custom)",
-    "IntersectionObserver",
-    "Smooth Scroll (custom)"
+    "Next.js", // Común en proyectos Web3/AI modernos
+    "Tailwind CSS",
+    "Solidity", // Por la validación en Blockchain
+    "Ethers.js", // Para conectar con la billetera/blockchain
+    "OpenAI API", // Por el componente de IA mencionado
+    "Framer Motion", // Para las animaciones fluidas que suele tener Scuti
+    "TypeScript"
   ],
-  image:domibyte1 ,
+  image: scuti1, // Asegúrate de importar estas variables de imagen
   images: [
-    domibyte1,
-    domibyte2,
-    domibyte3
+    scuti2,
+    scuti3,
+    scuti4,
+    scuti5
   ],
-  repo: "https://github.com/Whilmis/DomiByte",
-   demo: "https://domibyte.tech", // privado o aún no publicado
-  // sin demo pública por ahora
+  repo: "https://github.com/Whilmis/ScutiV1", // Ajusta si el repo tiene otro nombre
+  demo: "https://joinscuti.com",
+},
+
+{
+  id: 3, // Asegúrate de que este ID siga la secuencia de tus proyectos
+  slug: "iahostel",
+  category: "ai-hospitality",
+  year: 2025,
+  role: ["Fullstack Developer", "AI Integration", "UI/UX"],
+  tech: [
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "Node.js",
+    "OpenAI API",
+    "WhatsApp Cloud API",
+    "Framer Motion",
+    "Google Maps API"
+  ],
+  image: iahostel1, // Variable para la imagen principal
+  images: [
+    iahostel2,
+    iahostel3,
+    iahostel4,
+    iahostel5
+  ],
+  repo: "https://github.com/Whilmis/IAHostel", // Ajusta el enlace a tu repositorio
+  demo: "https://iahostel.com",
 },
   {
-  id: 3,
+  id: 4,
   slug: "aether-ui",
   category: "react-node",
   year: 2025,
@@ -75,23 +108,7 @@ export const projects = [
   demo: "https://eather.tech",  // Puedes colocar la URL del sistema en vivo si la tendrás
   
 },
-{
-  id: 4, // ajusta según tu lista
-  slug: "Emaus-platform",
-  category: "react-node",
-  year: 2025,
-  role: ["Full Stack"],
-  tech: ["React", "Node.js", "Express", "JWT", "MongoDB", "Docker"],
-  image: emaus1,
-  images: [
-    emaus1,
-    emaus2,
-    emaus3
-  ],
-  repo: null,      // si hay repo público, pon la URL
-  demo: null,      // demo pública (si aplica)
-  figma: null      // enlace de diseño (si aplica)
-},
+   // enlace de diseño (si aplica)
  {
   id: 5,
   slug: "aether-uif",
@@ -99,11 +116,11 @@ export const projects = [
   year: 2025,
   role: ["UI", "UX"],
   tech: ["Figma"],
-  image: eatherF, // Asegúrate de que esta imagen esté disponible en tu proyecto
+  image: aether4, // Asegúrate de que esta imagen esté disponible en tu proyecto
   images: [
-    eatherF,
-    eatherF2,
-    eatherF3
+    eatherF3,
+    aether2,
+    aether3
   ],
   figma: "https://www.figma.com/design/uKoAyqW1CLqzK7ArzoKZHA/W-Kit-de-UI-para-design-system?node-id=0-1&m=dev&t=vMgP4vX8KGgFL6Os-1", // Reemplaza con el enlace real a tu archivo en Figma
   name: "Aether UI",

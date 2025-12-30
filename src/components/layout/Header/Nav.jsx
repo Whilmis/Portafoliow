@@ -43,7 +43,7 @@ export default function Nav() {
   }, []);
 
   const items = [
-    { k: "home", label: t("nav.home", { defaultValue: "Inicio" }), href: "#top" },
+    { k: "home", label: t("nav.home", { defaultValue: "Inicio" }), href: "#home" },
     { k: "about", label: t("nav.about", { defaultValue: "Sobre mí" }), href: "#about" },
     { k: "services", label: t("nav.services", { defaultValue: "Servicios" }), href: "#services" },
     { k: "skills", label: t("nav.skills", { defaultValue: "Habilidades" }), href: "#skills" },

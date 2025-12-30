@@ -1,6 +1,6 @@
 
 import video from "../../../assets/video/videoplayback.mp4"
-import imgW from "../../../assets/img/secundario.png"
+import imgW from "../../../assets/img/porta3.png"
 
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";

@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import Reveal from "../../common/Reveal/Reveal.jsx";
-import foto from "../../../assets/img/IMG_5156.jpg"
+import foto from "../../../assets/img/whil22black.jpg"
 import "./About.css";
 
 export default function About() {

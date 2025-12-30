@@ -130,34 +130,34 @@
   ]
 }
 ,
-     "domibyte": {
-  "title": "DomiByte",
-  "short": "Corporate multilingual website with modern design and functional contact form.",
-  "long": "I designed and developed DomiByte's corporate website using React and Vite, with a modern and fully responsive design. The site includes sections for home, services, clients, contact, and footer, featuring bilingual support (Spanish and English) through a custom i18n system, smooth navigation animations, and a contact form integrated with EmailJS to send messages directly to the corporate email.",
-  "challenge": "Create a professional, lightweight, and fast website that reflects DomiByte's identity, facilitates client communication, and can be easily managed.",
-  "solution": "Built with React and Vite, styled with pure CSS for optimal performance, smooth navigation animations, a multilingual system using Context API, and a contact form powered by EmailJS for direct email delivery.",
+"scuti": {
+  "title": "Scuti",
+  "short": "Growth ecosystem (Phase 1) focused on UI/UX and AI service integration.",
+  "long": "I designed the UI/UX and developed the technical architecture for Scuti. The project is currently in Phase 1 (MVP), focusing on a high-performance interface integrated with AI APIs and email automation. This solid foundation is engineered to scale into a full on-chain validation ecosystem (Web3), which is currently in active development.",
+  "challenge": "Designing a disruptive visual identity and a scalable architecture that allows for a smooth transition from a traditional web platform to a decentralized solution.",
+  "solution": "Crafted the UI/UX design from scratch and developed using React/TypeScript. I implemented a modular service logic that facilitates future smart contract integration without compromising the current phase.",
   "features": [
-    "Modern and responsive design",
-    "Multilingual system (Spanish/English)",
-    "Smooth scroll animations and navigation",
-    "Sections: Home, About, Services, Clients, Contact",
-    "Functional contact form with EmailJS",
-    "Optimized for fast loading",
-    "Modular and scalable codebase",
-    "Implementation and quality assurance through cross-device testing"
+    "Original High-fidelity UI/UX Design and Prototyping",
+    "Phase 1: Functional MVP with React and TypeScript",
+    "AI Service integration for data processing",
+    "Automated communication via Gmail/EmailJS",
+    "Scalable architecture ready for Web3 integration",
+    "Active Roadmap: Blockchain integration in progress",
+    "Performance optimization and technical SEO",
+    "Fluid interface with custom animations"
   ],
   "process": [
-    "Defining file structure and component architecture",
-    "Designing each section with pure CSS",
-    "Implementing a custom i18n system",
-    "Integrating smooth scroll animations and transitions",
-    "Connecting the contact form with EmailJS",
-    "Responsive testing, optimization, and deployment"
+    "User Experience research and UI/UX design",
+    "Base structure development and TypeScript typing",
+    "Integration of external services (AI and Messaging)",
+    "Planning and environment setup for Web3 (Phase 2)",
+    "Usability testing and load optimization",
+    "Phase 1 Launch and ongoing development of new features"
   ],
   "results": [
-    { "value": "100%", "label": "Mobile and desktop compatibility" },
-    { "value": "2", "label": "Supported languages (ES/EN)" },
-    { "value": "0", "label": "Extra dependencies for i18n and animations" }
+    { "value": "Phase 1", "label": "Completed" },
+    { "value": "UI/UX", "label": "Custom Design" },
+    { "value": "Progress", "label": "Web3 Roadmap Active" }
   ]
 },
 "Emaus-platform": {
