@@ -1,6 +1,5 @@
-import { useEffect, useState, useRef, useCallback, useMemo, lazy, Suspense } from "react";
+import { useEffect, useState, useRef, useMemo, lazy, Suspense } from "react";
 import { useTranslation } from "react-i18next";
-import imgPortrait from "../../../assets/img/porta3-web.png";
 import "./Hero.css";
 
 // Three.js scene is code-split so it never blocks the first paint
@@ -9,9 +8,7 @@ const AvatarGlitch3D = lazy(() => import("./AvatarGlitch3D.jsx"));
 export default function Hero() {
   const { t, i18n } = useTranslation();
   const [roleIdx, setRoleIdx] = useState(0);
-  const [viewMode, setViewMode] = useState("3d"); // "3d" | "photo"
   const cardRef = useRef(null);
-  const handle3DFail = useCallback(() => setViewMode("photo"), []);
 
   const roles = useMemo(() => {
     const raw = t("hero.roles", { returnObjects: true });
@@ -36,7 +33,6 @@ export default function Hero() {
 
   // Efecto 3D Tilt interactivo con perspectiva en la tarjeta exterior
   const handleMouseMove = (e) => {
-    // Si el usuario está interactuando con el modelo 3D, suavizamos el tilt
     const card = cardRef.current;
     if (!card) return;
     const rect = card.getBoundingClientRect();
@@ -44,7 +40,7 @@ export default function Hero() {
     const y = e.clientY - rect.top;
     const centerX = rect.width / 2;
     const centerY = rect.height / 2;
-    const factor = viewMode === "3d" ? -6 : -12; // tilt más sutil en modo 3D para priorizar el drag del avatar
+    const factor = -6; // tilt suave para priorizar la interacción directa con el avatar
     const rotateX = ((y - centerY) / centerY) * factor;
     const rotateY = ((x - centerX) / centerX) * -factor;
 
@@ -158,69 +154,25 @@ export default function Hero() {
                 <span></span>
               </div>
               <div className="portrait-tag">
-                {viewMode === "3d" ? "AVATAR_3D.GLB" : "ENGINEER_PROFILE.SYS"}
+                AVATAR_3D.GLB // INTERACTIVE
               </div>
-
-              {/* Mode Switcher (3D vs Photo) */}
-              <div className="avatar-mode-switch">
-                <button
-                  type="button"
-                  className={`mode-btn ${viewMode === "3d" ? "active" : ""}`}
-                  onClick={() => setViewMode("3d")}
-                  title="Ver Avatar 3D Interactivo"
-                >
-                  3D
-                </button>
-                <button
-                  type="button"
-                  className={`mode-btn ${viewMode === "photo" ? "active" : ""}`}
-                  onClick={() => setViewMode("photo")}
-                  title="Ver Fotografía HD"
-                >
-                  HD
-                </button>
+              <div className="portrait-mode-live">
+                <span className="live-dot"></span>
+                <span>3D LIVE</span>
               </div>
             </div>
 
-            {/* Viewer / Image Frame */}
+            {/* 3D WebGL Viewer Frame */}
             <div className="portrait-image-wrapper">
-              {/* Luminous Red Ambient Aura (for photo mode; 3D mode uses pure black void) */}
-              {viewMode === "photo" && <div className="portrait-aura"></div>}
-
-              {viewMode === "3d" ? (
-                <Suspense
-                  fallback={
-                    <div className="ag-suspense">
-                      <span className="live-dot"></span> LOADING WEBGL ENGINE...
-                    </div>
-                  }
-                >
-                  <AvatarGlitch3D onFail={handle3DFail} />
-                </Suspense>
-              ) : (
-                /* Crisp 2D Photo Mode */
-                <img
-                  src={imgPortrait}
-                  alt="Whilmis Perez"
-                  className="portrait-photo"
-                  loading="eager"
-                />
-              )}
-
-              {viewMode === "photo" && (
-                <>
-                  {/* Smooth Holographic Glass Reflection */}
-                  <div className="portrait-glass-reflection"></div>
-
-                  {/* Minimal Tech Plus Reticles in 3D Depth */}
-                  <div className="portrait-tech-accents">
-                    <span className="accent-corner tl">+</span>
-                    <span className="accent-corner tr">+</span>
-                    <span className="accent-corner bl">+</span>
-                    <span className="accent-corner br">+</span>
+              <Suspense
+                fallback={
+                  <div className="ag-suspense">
+                    <span className="live-dot"></span> LOADING WEBGL ENGINE...
                   </div>
-                </>
-              )}
+                }
+              >
+                <AvatarGlitch3D />
+              </Suspense>
             </div>
 
             {/* Footer */}
@@ -228,7 +180,7 @@ export default function Hero() {
               <div className="portrait-name">WHILMIS PEREZ</div>
               <div className="portrait-status">
                 <span className="status-dot"></span>
-                {viewMode === "3d" ? "REAL-TIME GLITCH RIG" : "SENIOR ARCHITECT"}
+                REAL-TIME GLITCH RIG
               </div>
             </div>
           </div>

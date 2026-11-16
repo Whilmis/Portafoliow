@@ -259,39 +259,19 @@
   letter-spacing: 0.08em;
 }
 
-/* Avatar Mode Switcher (3D vs HD) */
-.avatar-mode-switch {
-  display: flex;
+.portrait-mode-live {
+  display: inline-flex;
   align-items: center;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  padding: 2px;
-  gap: 2px;
-}
-
-.mode-btn {
-  background: transparent;
-  border: none;
-  color: var(--color-text-muted);
-  font-family: var(--font-mono);
-  font-size: 0.58rem;
-  font-weight: 700;
+  gap: 6px;
+  background: rgba(229, 9, 20, 0.1);
+  border: 1px solid rgba(229, 9, 20, 0.35);
   padding: 3px 8px;
   border-radius: 12px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  letter-spacing: 0.05em;
-}
-
-.mode-btn:hover {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 700;
   color: #ffffff;
-}
-
-.mode-btn.active {
-  background: var(--color-primary);
-  color: #ffffff;
-  box-shadow: 0 0 10px rgba(229, 9, 20, 0.4);
+  letter-spacing: 0.06em;
 }
 
 .portrait-live-tag {
