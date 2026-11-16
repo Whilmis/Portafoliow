@@ -79,6 +79,9 @@ export default function Contact() {
       referral: referral || "N/A",
       coupon: referral || "N/A",
       project_type: chosenPackageLabel,
+      service: chosenPackageLabel,
+      package_key: selectedPackage,
+      package_id: selectedPackage,
       message: `[Modelo / Paquete: ${chosenPackageLabel}]${company ? `\n[Empresa / Negocio: ${company}]` : ""}${referral ? `\n[Cupón / Referido: ${referral}]` : ""}\n\n${message}`,
       page: window.location.href,
       date: new Date().toLocaleString()
