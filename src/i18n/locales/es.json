@@ -1,45 +1,72 @@
 {
   "nav": {
     "home": "Inicio",
-    "about": "Sobre mí",
     "services": "Servicios",
-    "skills": "Habilidades",
+    "tools": "Stack",
     "portfolio": "Portafolio",
-    "contact": "Contacto"
+    "about": "Sobre mí",
+    "pipeline": "AI Pipeline",
+    "skills": "Habilidades",
+    "contact": "Contacto",
+    "cta": "HABLEMOS",
+    "packages": "Paquetes"
   },
   "hero": {
-    "greeting": "Hola, soy Whilmis",
-   "roles": ["Desarrollador", "Diseñador Web"],
+    "greeting": "Hola, soy",
+    "openToWork": "DISPONIBLE PARA PROYECTOS & SPRINTS",
+    "available": "STARTUPS, EMPRESAS & SCALE-UPS",
+    "workTogether": "INICIAR CONVERSACIÓN",
+    "resume": "SOBRE MÍ & CV",
+    "description": "Ayudo a startups, empresas y equipos a diseñar y construir productos digitales de alto impacto, automatizar operaciones con agentes de IA y escalar arquitecturas robustas sin deuda técnica.",
+    "startProject": "¡EMPECEMOS TU PRÓXIMO PROYECTO! ➔",
+    "badge": "Convirtiendo ideas<br/>en poderosas<br/>experiencias digitales.",
+    "stats": {
+      "experience": "EXPERIENCIA SENIOR<br/>8+ AÑOS",
+      "projects": "PROYECTOS & SISTEMAS<br/>60+ ENTREGADOS",
+      "satisfaction": "PROPIEDAD DE CÓDIGO<br/>100% TUYO (IP)"
+    },
+    "roles": [
+      "FULL-STACK & CREATIVE ARCHITECT",
+      "MVP & PRODUCT ENGINEER (0 → 1)",
+      "AGENTES DE IA & AUTOMATIZACIÓN N8N",
+      "CONSULTOR TÉCNICO & FRACTIONAL LEAD"
+    ],
     "ctaPortfolio": "Ver Portafolio",
-    "ctaContact": "Contáctame"
+    "ctaContact": "Contáctame",
+    "viewPackages": "VER PAQUETES & MODELOS"
   },
   "services": {
     "title": "Lo que ofrezco",
-    "description": "Mi objetivo es aportar soluciones efectivas, adaptadas a las necesidades específicas de cada cliente. A través de un enfoque centrado en la calidad, la comunicación y la eficiencia, ofrezco una experiencia confiable que genera resultados concretos. Ya sea mediante el desarrollo web, la optimización de procesos o el diseño de interfaces intuitivas, mi compromiso es brindar un servicio que aporte valor real y duradero.",
+    "eyebrow": "// INGENIERÍA PARA STARTUPS, EMPRESAS & SCALE-UPS",
+    "description": "Soluciones integrales de software y arquitectura para startups, scale-ups y empresas consolidadas. Desde validación rápida de nuevos productos hasta la modernización de sistemas corporativos y automatización con IA.",
     "cards": {
       "webDesign": {
-        "title": "Web Design",
-        "front": "Ofrezco soluciones de diseño web personalizadas, enfocadas en crear sitios visualmente atractivos, funcionales y adaptados a todo tipo de dispositivos.",
-        "backTitle": "Consultoría Experta",
-        "backText": "Brindo asesoramiento especializado para ayudarte a tomar decisiones estratégicas con mayor claridad y confianza."
+        "title": "Lanzamiento de MVP & Frontend 3D",
+        "impact": "Time-to-Market Rápido | Startups & Nuevos Productos",
+        "front": "Transformo ideas y diseños de Figma en aplicaciones web interactivas, ultrarrápidas y visualmente cautivadoras con React, Next.js y WebGL/3D.",
+        "backTitle": "Validación & Conversión",
+        "backText": "Diseñado para enamorar usuarios, validar tracción en el mercado y presentar demos de alto nivel ante inversores o comités de dirección."
       },
       "development": {
-        "title": "Desarrollo",
-        "front": "Ofrezco soluciones de desarrollo a medida, enfocadas en crear productos digitales funcionales, escalables y eficientes.",
-        "backTitle": "Innovación y Escalabilidad",
-        "backText": "Transformo tus ideas en soluciones digitales robustas, preparadas para crecer y adaptarse a las necesidades de tu negocio."
-      },
-      "seo": {
-        "title": "SEO/Marketing",
-        "front": "Impulso la visibilidad y el posicionamiento de tu proyecto en buscadores a través de estrategias SEO efectivas y éticas. Analizo tu presencia digital, optimizo contenidos y estructura web.",
-        "backTitle": "Estrategias que Conectan",
-        "backText": "Diseño planes de acción personalizados para atraer a tu público objetivo, aumentar el tráfico cualificado y fortalecer tu marca en el entorno digital."
+        "title": "Arquitectura Full-Stack & Sistemas Empresariales",
+        "impact": "Escalabilidad 100k+ Usuarios | Alta Concurrencia",
+        "front": "Desarrollo de backends robustos, APIs seguras, bases de datos optimizadas (PostgreSQL) y despliegue cloud en Docker, AWS o Vercel.",
+        "backTitle": "Fundación para Crecer",
+        "backText": "Código modular en TypeScript y microservicios sin deuda técnica, preparado para soportar el crecimiento de startups o la escala de empresas consolidadas."
       },
       "mobile": {
-        "title": "Aplicaciones Móviles",
-        "front": "Diseño y desarrollo aplicaciones móviles intuitivas, eficientes y adaptadas a las necesidades del usuario. Ya sea para iOS, Android o soluciones multiplataforma, creo experiencias móviles que combinan rendimiento, usabilidad y diseño atractivo.",
-        "backTitle": "Experiencias que Inspiran",
-        "backText": "Transformo tus ideas en aplicaciones móviles dinámicas y atractivas, ofreciendo soluciones que combinan tecnología, funcionalidad y una experiencia de usuario excepcional."
+        "title": "Agentes Autónomos de IA & Automatización",
+        "impact": "-70% Tareas Manuales | Automatización 24/7",
+        "front": "Implementación de agentes inteligentes con LLMs y flujos complejos en n8n para soporte, análisis de datos, integraciones CRM y automatización operativa.",
+        "backTitle": "Eficiencia Operativa",
+        "backText": "Multiplica la capacidad operativa de tu equipo eliminando cuellos de botella manuales y conectando todas las herramientas de tu empresa en tiempo real."
+      },
+      "seo": {
+        "title": "Sistemas UI/UX & Auditoría de Rendimiento",
+        "impact": "Carga Sub-1s | Optimización de Conversión & SEO",
+        "front": "Auditoría integral de Core Web Vitals, refactorización de cuellos de botella de rendimiento y diseño de sistemas escalables en Figma y código.",
+        "backTitle": "Retención & Crecimiento",
+        "backText": "Elimina fricción en el embudo de usuarios, mejora los tiempos de carga y asegura un posicionamiento técnico sólido en buscadores."
       }
     }
   },
@@ -69,50 +96,88 @@
       }
     ],
     "bars": [
-      { "label": "HTML5 / CSS3", "value": 95 },
-      { "label": "React", "value": 95 },
-      { "label": "Node", "value": 82 },
-      { "label": "UX/UI Design", "value": 85 },
-      { "label": "Photoshop", "value": 86 },
-      { "label": "Illustrator", "value": 84 },
-      { "label": "SEO", "value": 83 },
-      { "label": "Gestión de proyectos", "value": 78 }
+      {
+        "label": "HTML5 / CSS3",
+        "value": 95
+      },
+      {
+        "label": "React",
+        "value": 95
+      },
+      {
+        "label": "Node",
+        "value": 82
+      },
+      {
+        "label": "UX/UI Design",
+        "value": 85
+      },
+      {
+        "label": "Photoshop",
+        "value": 86
+      },
+      {
+        "label": "Illustrator",
+        "value": 84
+      },
+      {
+        "label": "SEO",
+        "value": 83
+      },
+      {
+        "label": "Gestión de proyectos",
+        "value": 78
+      },
+      {
+        "label": "IA / n8n",
+        "value": 85
+      }
     ]
   },
-
   "items": {
-  "school-platform": {
-    "title": "Plataforma de Gestión Escolar",
-    "short": "App full-stack para control académico con React y Node.js.",
-    "long": "Aplicación de gestión académica que integra registro de estudiantes, calificaciones, asistencia y panel para docentes y administradores. Arquitectura modular, autenticación JWT, roles y panel en tiempo real."
+    "school-platform": {
+      "title": "Plataforma de Gestión Escolar",
+      "short": "App full-stack para control académico con React y Node.js.",
+      "long": "Aplicación de gestión académica que integra registro de estudiantes, calificaciones, asistencia y panel para docentes y administradores. Arquitectura modular, autenticación JWT, roles y panel en tiempo real."
+    },
+    "ecommerce-suite": {
+      "title": "Suite E-commerce (API + Frontend)",
+      "short": "Tienda online con carrito, pagos y panel de administración.",
+      "long": "Implementación completa de comercio electrónico: catálogo, búsqueda, carrito persistente, checkout con pasarela de pago y dashboard para inventario y pedidos. SSR/SPA optimizado para SEO y rendimiento."
+    },
+    "personal-finance-app": {
+      "title": "App de Finanzas Personales",
+      "short": "Diseño UX/UI para app móvil de gestión de gastos.",
+      "long": "Flujos de onboarding, categorización de gastos, metas, reportes y alertas. Sistema de diseño consistente, patrones de accesibilidad y prototipos navegables."
+    },
+    "analytics-dashboard": {
+      "title": "Dashboard de Analítica",
+      "short": "Interfaz limpia para métricas y reportes.",
+      "long": "Diseño de panel con gráficos comparativos, filtros avanzados, estados vacíos y feedback. Enfoque en jerarquía visual y legibilidad de datos."
+    }
   },
-  "ecommerce-suite": {
-    "title": "Suite E-commerce (API + Frontend)",
-    "short": "Tienda online con carrito, pagos y panel de administración.",
-    "long": "Implementación completa de comercio electrónico: catálogo, búsqueda, carrito persistente, checkout con pasarela de pago y dashboard para inventario y pedidos. SSR/SPA optimizado para SEO y rendimiento."
-  },
-  "personal-finance-app": {
-    "title": "App de Finanzas Personales",
-    "short": "Diseño UX/UI para app móvil de gestión de gastos.",
-    "long": "Flujos de onboarding, categorización de gastos, metas, reportes y alertas. Sistema de diseño consistente, patrones de accesibilidad y prototipos navegables."
-  },
-  "analytics-dashboard": {
-    "title": "Dashboard de Analítica",
-    "short": "Interfaz limpia para métricas y reportes.",
-    "long": "Diseño de panel con gráficos comparativos, filtros avanzados, estados vacíos y feedback. Enfoque en jerarquía visual y legibilidad de datos."
-  }
-},
-"viewProject": "Detalle",
-"openDemo": "Proyecto",
-"openRepo": "Ver repositorio",
-"openFigma": "Ver en Figma"
-,
- "portfolio": {
+  "viewProject": "Detalle",
+  "openDemo": "Proyecto",
+  "openRepo": "Ver repositorio",
+  "openFigma": "Ver en Figma",
+  "portfolio": {
     "title": "Portafolio",
     "description": "Algunos de mis proyectos en desarrollo y diseño.",
-    "filters": { "all": "Todos", "reactNode": "React / Node.js", "uxui": "UX / UI" },
-    "categories": { "reactNode": "React / Node.js", "uxui": "UX / UI" },
-    "labels": { "year": "Año", "role": "Rol", "stack": "Tecnologías" },
+    "totalProjects": "PROYECTOS",
+    "filters": {
+      "all": "Todos",
+      "reactNode": "React / Node.js",
+      "uxui": "UX / UI"
+    },
+    "categories": {
+      "reactNode": "React / Node.js",
+      "uxui": "UX / UI"
+    },
+    "labels": {
+      "year": "Año",
+      "role": "Rol",
+      "stack": "Tecnologías"
+    },
     "sections": {
       "overview": "Resumen",
       "challenge": "Reto",
@@ -128,228 +193,387 @@
     "openRepo": "Ver repositorio",
     "openFigma": "Ver en Figma",
     "items": {
-    "planning-scheduling": {
-  "title": "Planning & Scheduling",
-  "short": "Sistema de planificación operativa con arrastrar-y-soltar para AB InBev.",
-  "long": "Formé parte del equipo frontend en la construcción de un planificador de operaciones con React. La aplicación permite organizar grandes volúmenes de ítems por semanas y días mediante drag & drop, con estados centralizados en Redux y sincronización con sistemas corporativos. La interfaz prioriza claridad, rendimiento y una interacción fluida.",
-  "challenge": "Centralizar la planificación semanal de miles de ítems, reducir la fricción de carga manual y asegurar consistencia entre equipos.",
-  "solution": "Tablero semanal con columnas por día, backlog lateral y asignación por drag & drop; estado global con Redux, validaciones de negocio en cliente y sincronización con servicios .NET (incluida integración con SAP).",
-"features": [
-  "Arrastrar y soltar entre días y semanas",
-  "Backlog y contador de ítems por día",
-  "Filtros avanzados y vista extendida",
-  "Historial y guardado seguro",
-  "Sincronización con SAP y servicios .NET",
-  "Interfaz responsive para desktop y móvil",
-  "Mensajería de estados (loading, success, error)",
-  "Revisión y control de calidad mediante Azure DevOps (PR #5655)"
-],
-"process": [
-  "Análisis de reglas y casos de uso",
-  "Diseño de UI y prototipos funcionales",
-  "Gestión de estado global con Redux",
-  "Integración con API C#/.NET y manejo de errores",
-  "Revisión por Pull Request en Azure DevOps (PR #5655)",
-  "Pruebas UAT, optimización y despliegue"
-],
-  "results": [
-    { "value": "+25%", "label": "Velocidad de planificación" },
-    { "value": "-30%", "label": "Errores por asignación manual" },
-    { "value": "Alta", "label": "Adopción del equipo piloto" }
-  ]
-},
-    "scuti": {
-  "title": "Scuti",
-  "short": "Ecosistema de crecimiento (Fase 1) con enfoque en UI/UX y servicios de IA.",
-  "long": "Diseñé y desarrollé la experiencia de usuario (UI/UX) y la arquitectura técnica de Scuti. Actualmente, el proyecto se encuentra en su primera fase (MVP), centrada en una interfaz de alto rendimiento integrada con APIs de IA y automatización de correos. Esta base sólida está diseñada para escalar hacia un ecosistema completo de validación on-chain (Web3), el cual se encuentra actualmente en proceso de desarrollo.",
-  "challenge": "Diseñar una identidad visual disruptiva y una arquitectura escalable que permita la transición fluida de una plataforma web tradicional a una solución descentralizada.",
-  "solution": "Creación del diseño UI/UX desde cero y desarrollo con React/TypeScript. Se implementó una lógica de servicios modulares que facilita la futura integración de contratos inteligentes sin comprometer la fase actual.",
-  "features": [
-    "Diseño UI/UX original y prototipado de alta fidelidad",
-    "Fase 1: MVP funcional con React y TypeScript",
-    "Integración de servicios de IA para procesamiento de datos",
-    "Automatización de comunicación vía Gmail/EmailJS",
-    "Arquitectura escalable preparada para Web3",
-    "Roadmap activo: Integración Blockchain en desarrollo",
-    "Optimización de rendimiento y SEO técnico",
-    "Interfaz fluida con animaciones personalizadas"
-  ],
-  "process": [
-    "Investigación y diseño de la experiencia de usuario (UI/UX)",
-    "Desarrollo de la estructura base y tipado con TypeScript",
-    "Integración de servicios externos (IA y Mensajería)",
-    "Planificación y preparación del entorno para Web3 (Fase 2)",
-    "Pruebas de usabilidad y optimización de carga",
-    "Lanzamiento de la Fase 1 y desarrollo de nuevas funcionalidades"
-  ],
-  "results": [
-    { "value": "Fase 1", "label": "Completada" },
-    { "value": "UI/UX", "label": "Diseño propio" },
-    { "value": "Progreso", "label": "Roadmap Web3 activo" }
-  ]
-},
-"iahostel": {
-  "title": "IAHostel",
-  "short": "Plataforma de digitalización 360º para hostelería con integración de agentes de IA.",
-  "long": "Lideré el desarrollo técnico de IAHostel, una agencia especializada en la transformación digital del sector gastronómico (restaurantes, bares y cafés). El proyecto ofrece un ecosistema integral que incluye desarrollo web de alto rendimiento, menús QR interactivos y la implementación de agentes de IA personalizados que gestionan reservas y pedidos 24/7 a través de WhatsApp y la web, optimizando drásticamente la operativa de los negocios.",
-  "challenge": "Desarrollar una solución tecnológica que simplifique la gestión compleja de la hostelería, integrando IA y herramientas de reserva en una plataforma rápida y fácil de usar para propietarios sin conocimientos técnicos.",
-  "solution": "Se construyó una arquitectura robusta utilizando Next.js para garantizar velocidad y SEO local. Se integraron modelos de lenguaje avanzados para crear asistentes virtuales capaces de entender el lenguaje natural de los clientes para reservas y consultas.",
-  "features": [
-    "Desarrollo web optimizado para SEO local y conversión",
-    "Agentes de IA para gestión automática de reservas (WhatsApp/Web)",
-    "Integración de sistemas de pedidos online y Menús QR",
-    "Dashboard de gestión de contenido para propietarios",
-    "Optimización de presencia en Google Maps",
-    "Diseño ultra-responsive para dispositivos móviles",
-    "Automatización de flujo de trabajo para recepción de clientes",
-    "Arquitectura modular para escalabilidad de servicios"
-  ],
-  "process": [
-    "Investigación de puntos críticos en la gestión de hostelería",
-    "Diseño de interfaces enfocadas en la conversión y usabilidad",
-    "Desarrollo del frontend y backend con Next.js y Node.js",
-    "Entrenamiento e integración de agentes de IA con OpenAI",
-    "Conexión de APIs de mensajería (WhatsApp Business)",
-    "Pruebas de carga y despliegue optimizado en producción"
-  ],
-  "results": [
-    { "value": "24/7", "label": "Gestión de reservas automática" },
-    { "value": "100%", "label": "Enfoque en sector hostelería" },
-    { "value": "AI", "label": "Agentes integrados con éxito" }
-  ]
-}
-,
-     
-  "aether-ui": {
-    "title": "Aether UI",
-    "short": "Sistema de diseño web modular con guía de estilo, componentes reutilizables y soporte multiidioma.",
-    "long": "Aether UI es un sistema de diseño completo construido con React y Vite. Incluye tokens de diseño (colores, tipografías, sombras), una librería de componentes personalizables, páginas de documentación, una guía de principios de diseño visual y accesibilidad, y navegación UX/UI. El sistema soporta múltiples idiomas con i18next y ofrece ejemplos listos para copiar en JSX y CSS.",
-    "challenge": "Construir una librería visual reutilizable que mantenga consistencia visual, facilite el desarrollo frontend y permita documentación clara del diseño.",
-    "solution": "Sistema centralizado y modular que agrupa estilos, componentes y guías. Traducciones en archivos JSON, navegación con React Router y ejemplos visuales interactivos para facilitar la implementación.",
-    "features": [
-      "Tokens de diseño (colores, tamaños, pesos, fondos)",
-      "Componentes reutilizables: botones, tarjetas, diálogos, campos de texto",
-      "Vista previa en vivo y código de ejemplo por componente",
-      "Sistema multiidioma con i18next",
-      "Guías de estilo: tipografía, color, accesibilidad, tono",
-      "Menú flotante para navegar entre secciones",
-      "Totalmente responsive y sin backend requerido"
-    ],
-    "process": [
-      "Definición de tokens y estilos base",
-      "Diseño de estructura de carpetas escalable",
-      "Creación y documentación de componentes UI",
-      "Implementación de navegación e internacionalización",
-      "Integración del visor de código JSX + CSS",
-      "Ajustes visuales y pruebas en desktop/mobile"
-    ],
-    "results": [
-      { "value": "100%", "label": "Consistencia visual entre componentes" },
-      { "value": "2", "label": "Idiomas soportados (ES/EN)" },
-      { "value": "0", "label": "Dependencias para backend o frameworks UI externos" }
-    ]
-  },
-
-  "Emaus-platform": {
-  "title": "Plataforma de gestión Emaús",
-  "short": "Web app para gestionar miembros, actividades y ventas con panel administrativo.",
-  "description": "Desarrollé una plataforma web con React y Node que centraliza la gestión de miembros, calendario de actividades e inscripciones, además de un módulo de catálogo, carrito e inventario. El objetivo es reemplazar procesos manuales (WhatsApp/hojas) por flujos digitales, con notificaciones y control por roles.",
-  "highlights": [
-    "Panel para miembros y administradores con permisos por rol",
-    "Autenticación JWT y sesiones seguras",
-    "Calendario interactivo e inscripciones online",
-    "Catálogo, carrito y control de inventario",
-    "Notificaciones internas y registro de asistencia",
-    "UI responsive y accesible"
-  ],
-  "features": [
-    "Gestión de información: perfiles, historial de actividades y compras",
-    "Actividades: calendario, inscripciones y listas de asistentes",
-    "Tienda: catálogo, carrito y reportes de ventas",
-    "Inventario automatizado con alertas",
-    "Seguridad: credenciales, roles y copias de seguridad",
-    "Accesible en móvil y desktop"
-  ],
-  "process": [
-    "Descubrimiento y mapeo de procesos actuales",
-    "Arquitectura: React (SPA) + Node/Express (API) + MongoDB",
-    "Diseño de UI/UX, estados y vacíos de contenido",
-    "Implementación de autenticación JWT y autorización por rol",
-    "Desarrollo de módulos (miembros, eventos, tienda, inventario)",
-    "Testing funcional/UAT y despliegue en contenedores"
-  ],
-  "problem": "La organización operaba con procesos manuales: planificación en redes/WhatsApp, inscripciones no centralizadas y ventas sin control de inventario, provocando desorganización y demoras.",
-  "impact": [
-    "Centralización de datos y automatización de tareas clave",
-    "Inscripciones y comunicación más claras y oportunas",
-    "Trazabilidad de ventas e inventario",
-    "Base para reportes y toma de decisiones"
-  ],
-  "cta": {
-    "open": "Abrir proyecto",
-    "repo": "Ver repositorio",
-    "demo": "Ver demo"
-  }
-}
-
-
-,
-     "aether-uif": {
-  "title": "Aether UI Figma",
-  "short": "Sistema de diseño híbrido: claridad, estructura y elegancia.",
-  "long": "Aether UI es un sistema de diseño creado en Figma que combina la precisión de Material UI con la estética visual del estilo iOS. Está pensado para proyectos web modernos, con enfoque en accesibilidad, modularidad, escalabilidad y consistencia.",
-  "challenge": "Unificar criterios visuales sin limitar la creatividad ni sacrificar la flexibilidad en productos escalables.",
-  "solution": "Diseño de principios universales, paleta de colores sobria pero expresiva, y componentes visuales personalizables con consistencia semántica.",
-  "features": [
-    "Tipografías complementarias: Roboto + Playfair Display",
-    "Paleta dual: Morado como base, azul profundo como acento",
-    "Componentes modulares reutilizables",
-    "Documentación lista para Zeroheight"
-  ],
-  "process": [
-    "Definición de principios de diseño",
-    "Exploración de paleta y contraste",
-    "Pruebas visuales en contextos oscuros y claros",
-    "Definición de escalas tipográficas y espaciales",
-    "Exportación a Figma y organización por categorías"
-  ],
-  "results": [
-    { "value": "+100%", "label": "Coherencia visual en productos" },
-    { "value": "-40%", "label": "Tiempo de decisiones visuales" },
-    { "value": "+1", "label": "Sistema adoptado por DomiByte" }
-  ]
-},
-
-"developer-portfolio": {
-  "title": "Portafolio de Desarrollador Web",
-  "short": "Diseño personal para presentar perfil y servicios.",
-  "long": "Este portafolio personal fue creado para mostrar mis servicios de desarrollo web, habilidades técnicas y estilo visual. El diseño incluye secciones de presentación, servicios, contacto e integración social. Además, todos los dibujos e ilustraciones digitales que acompañan el diseño fueron creados por mí, capa por capa, en Adobe Illustrator. Aunque algunos no están actualmente implementados en el sitio, representan mi capacidad para diseñar y crear assets visuales originales, reforzando mi enfoque en la estética funcional aplicada al desarrollo frontend.",
-  "challenge": "Organizar toda la información personal y profesional en una sola página sin perder claridad visual.",
-  "solution": "Diseño de secciones bien delimitadas con jerarquía tipográfica, íconos funcionales y formulario de contacto enfocado.",
-  "features": [
-    "Página de presentación con llamado a la acción",
-    "Sección de servicios y habilidades",
-    "Formulario de contacto funcional",
-    "Diseño responsivo y accesible",
-    "Integración con redes sociales"
-  ],
-  "process": [
-    "Recolección de contenido personal y profesional",
-    "Definición de estructura de secciones",
-    "Prototipado en Figma",
-    "Testeo visual en distintos tamaños de pantalla"
-  ],
-  "results": [
-    { "value": "+1", "label": "Portafolio completo y funcional" },
-    { "value": "+100%", "label": "Mejor comunicación profesional" },
-    { "value": "-50%", "label": "Tiempo de respuesta a interesados" }
-  ]
-}
-
+      "grupo-hormesis": {
+        "title": "Grupo Hormesis",
+        "short": "Plataforma B2B de prospección automatizada y generación en tiempo real de propuestas web interactivas con IA generativa y Google Maps.",
+        "long": "Grupo Hormesis es un ecosistema SaaS y motor operativo B2B orientado a agencias y consultoras de transformación digital. Automatiza el ciclo completo de venta consultiva para el sector de la hostelería: desde la recolección inteligente de leads en Google Maps hasta el enriquecimiento de fichas (fotografías reales del local, reseñas verificadas, horarios y cartas) y la maquetación instantánea de propuestas web inmersivas de alta gama con reservas directas y campañas de captación personalizadas.",
+        "challenge": "El flujo habitual de venta de servicios web en hostelería demanda horas de diseño manual previo para cada cliente, con bajas tasas de conversión cuando se usan maquetas genéricas con imágenes de stock. Por otro lado, los intentos previos de generación con IA producían 'alucinaciones visuales' (textos corporativos descontextualizados, contrastes ilegibles de color y maquetas rotas). El desafío consistió en construir un sistema determinista capaz de extraer la identidad real del negocio físico en segundos y renderizar propuestas hiperpersonalizadas y estables sin intervención humana.",
+        "solution": "Diseñé e implementé una arquitectura desacoplada en dos niveles: 1) Motor Determinista de Hostelería (Bulletproof Culinary Engine) con 8 plantillas fijas hiperoptimizadas que garantizan contraste accesible, adaptabilidad móvil total y cero roturas de layout; 2) Pipeline de Enriquecimiento y Fusión con IA conectando Google Places API, Cloudinary y Gemini para procesar la identidad del cliente y redactar platos estrella; 3) Sistema de Auto-Sanación (Auto-Healing) en backend para regenerar maquetas obsoletas y panel de control en React 19 con visor sandbox.",
+        "features": [
+          "8 Arquetipos Gastronómicos Deterministas: Diseños especializados con cartas interactivas de platos, maridajes y alérgenos",
+          "Enriquecimiento Automático vía Google Places API: Descarga de imágenes HD, ratings, reseñas verificadas y horarios sincronizados",
+          "Persistencia y Optimización en Cloudinary: Almacenamiento en la nube con compresión WebP y transformaciones dinámicas",
+          "Motor de Redacción de Platos con Gemini: IA culinaria que analiza la web original y genera menús contextualizados",
+          "Módulo de Reservas Directas sin Comisiones: Widget integrado para reserva inmediata por llamada o WhatsApp",
+          "Sistema de Auto-Healing de Maquetas: Detección en el servidor de propuestas desactualizadas y auto-rediseño al abrirse",
+          "Workflows Asíncronos Programables (Cron Jobs): Automatización de recolección en Google Maps y outreach por lotes",
+          "Panel de Control y Auditoría en React 19: Sandbox aislado con visor a pantalla completa y regeneración en 1 clic"
+        ],
+        "process": [
+          "Modelado y Arquitectura de Datos: Esquema relacional en PostgreSQL con Prisma ORM para leads, workflows y auditorías",
+          "Pipeline de Ingesta y Web Scraping: Microservicios para scraping geográfico en Google Places y parsing de sitios web",
+          "Ingeniería del Motor Visual Gastronómico: Generador determinista HTML/CSS con tipografías de alta gama y microinteracciones",
+          "Orquestación de IA y Background Workers: Motor de ejecución con reintentos automáticos, rate limiting y síntesis con Gemini",
+          "Desarrollo del Frontend Administrativo: Panel en React 19 con auditoría profunda, visor iframe y regeneración vía REST API",
+          "Despliegue Continuo (CI/CD): Puesta en producción contenerizada con Nixpacks en Railway para API y frontend"
+        ],
+        "results": [
+          {
+            "value": "95%",
+            "label": "Reducción en tiempo de maquetación comercial (de 2h a <25s)"
+          },
+          {
+            "value": "100%",
+            "label": "Fidelidad visual con fotos reales del local y reseñas Google"
+          },
+          {
+            "value": "0%",
+            "label": "Errores de contraste o desbordamientos visuales"
+          }
+        ]
+      },
+      "coastline-crm": {
+        "title": "Coastline CRM",
+        "short": "Plataforma integral de gestión empresarial (CRM, Ventas, Operaciones, RRHH y Almacén).",
+        "long": "Coastline CRM es una plataforma integral de gestión empresarial diseñada para optimizar los flujos de trabajo corporativos, la gestión de ventas, el control de operaciones y el manejo de recursos humanos y de almacén. Diseñé e implementé el Backend (API REST) del sistema, construyendo una arquitectura robusta, escalable y tipada que sirve como el núcleo de toda la lógica de negocio y persistencia de datos de la empresa. *(Nota: El proyecto se encuentra en su fase final de preparación y será desplegado a producción este próximo lunes).* ",
+        "challenge": "Diseñar una arquitectura escalable capaz de soportar operaciones complejas como firmas digitales, cotizaciones dinámicas y cargas masivas desde Excels heredados.",
+        "solution": "Un backend robusto construido en Node.js, Express y TypeScript, respaldado por PostgreSQL y Prisma ORM. Se integró JWT y bcrypt para seguridad, Puppeteer para documentos, y tareas en segundo plano para eficiencia.",
+        "features": [
+          "Módulos de Gestión de Ventas, Cuentas y Contactos (Pipeline)",
+          "Sistema Avanzado de Cotizaciones con versionado y plantillas dinámicas",
+          "Firmas Digitales con captura de IP, User Agent y Hash",
+          "Control del ciclo de vida de proyectos y certificaciones de obra",
+          "Gestión de Almacén, control de stock y solicitudes",
+          "Control de RRHH (RBAC, asistencia, vacaciones)",
+          "Seguridad Integral mediante middlewares y autorización dinámica",
+          "Exportación/Importación masiva (ExcelJS) y generación de PDFs (Puppeteer)"
+        ],
+        "process": [
+          "Modelado de datos avanzado con Prisma (>30 tablas)",
+          "Desarrollo de API REST tipada y segura",
+          "Integración de subida de archivos (Multer) y emails (Resend)",
+          "Implementación de Background Jobs con Node-Cron",
+          "Cargas masivas para migración de datos heredados"
+        ],
+        "results": [
+          {
+            "value": "30+",
+            "label": "Tablas relacionales estructuradas"
+          },
+          {
+            "value": "100%",
+            "label": "Trazabilidad de datos y seguridad"
+          }
+        ]
+      },
+      "planning-scheduling": {
+        "title": "Planning & Scheduling",
+        "short": "Sistema de planificación operativa con arrastrar-y-soltar para AB InBev.",
+        "long": "Formé parte del equipo frontend en la construcción de un planificador de operaciones con React. La aplicación permite organizar grandes volúmenes de ítems por semanas y días mediante drag & drop, con estados centralizados en Redux y sincronización con sistemas corporativos. La interfaz prioriza claridad, rendimiento y una interacción fluida.",
+        "challenge": "Centralizar la planificación semanal de miles de ítems, reducir la fricción de carga manual y asegurar consistencia entre equipos.",
+        "solution": "Tablero semanal con columnas por día, backlog lateral y asignación por drag & drop; estado global con Redux, validaciones de negocio en cliente y sincronización con servicios .NET (incluida integración con SAP).",
+        "features": [
+          "Arrastrar y soltar entre días y semanas",
+          "Backlog y contador de ítems por día",
+          "Filtros avanzados y vista extendida",
+          "Historial y guardado seguro",
+          "Sincronización con SAP y servicios .NET",
+          "Interfaz responsive para desktop y móvil",
+          "Mensajería de estados (loading, success, error)",
+          "Revisión y control de calidad mediante Azure DevOps (PR #5655)"
+        ],
+        "process": [
+          "Análisis de reglas y casos de uso",
+          "Diseño de UI y prototipos funcionales",
+          "Gestión de estado global con Redux",
+          "Integración con API C#/.NET y manejo de errores",
+          "Revisión por Pull Request en Azure DevOps (PR #5655)",
+          "Pruebas UAT, optimización y despliegue"
+        ],
+        "results": [
+          {
+            "value": "+25%",
+            "label": "Velocidad de planificación"
+          },
+          {
+            "value": "-30%",
+            "label": "Errores por asignación manual"
+          },
+          {
+            "value": "Alta",
+            "label": "Adopción del equipo piloto"
+          }
+        ]
+      },
+      "scuti-v1": {
+        "title": "Scuti Enterprise Landing",
+        "short": "Ecosistema de crecimiento (Fase 1) con enfoque en UI/UX y servicios de IA.",
+        "long": "Diseñé y desarrollé la experiencia de usuario (UI/UX) y la arquitectura técnica de Scuti. Actualmente, el proyecto se encuentra en su primera fase (MVP), centrada en una interfaz de alto rendimiento integrada con APIs de IA y automatización de correos. Esta base sólida está diseñada para escalar hacia un ecosistema completo de validación on-chain (Web3), el cual se encuentra actualmente en proceso de desarrollo.",
+        "challenge": "Diseñar una identidad visual disruptiva y una arquitectura escalable que permita la transición fluida de una plataforma web tradicional a una solución descentralizada.",
+        "solution": "Creación del diseño UI/UX desde cero y desarrollo con React/TypeScript. Se implementó una lógica de servicios modulares que facilita la futura integración de contratos inteligentes sin comprometer la fase actual.",
+        "features": [
+          "Diseño UI/UX original y prototipado de alta fidelidad",
+          "Fase 1: MVP funcional con React y TypeScript",
+          "Integración de servicios de IA para procesamiento de datos",
+          "Automatización de comunicación vía Gmail/EmailJS",
+          "Arquitectura escalable preparada para Web3",
+          "Roadmap activo: Integración Blockchain en desarrollo",
+          "Optimización de rendimiento y SEO técnico",
+          "Interfaz fluida con animaciones personalizadas"
+        ],
+        "process": [
+          "Investigación y diseño de la experiencia de usuario (UI/UX)",
+          "Desarrollo de la estructura base y tipado con TypeScript",
+          "Integración de servicios externos (IA y Mensajería)",
+          "Planificación y preparación del entorno para Web3 (Fase 2)",
+          "Pruebas de usabilidad y optimización de carga",
+          "Lanzamiento de la Fase 1 y desarrollo de nuevas funcionalidades"
+        ],
+        "results": [
+          {
+            "value": "Fase 1",
+            "label": "Completada"
+          },
+          {
+            "value": "UI/UX",
+            "label": "Diseño propio"
+          },
+          {
+            "value": "Progreso",
+            "label": "Roadmap Web3 activo"
+          }
+        ]
+      },
+      "scuti": {
+        "title": "Scuti Web App Beta",
+        "short": "Plataforma integral de e-learning e intercambio de habilidades P2P.",
+        "long": "Scuti es una plataforma integral de aprendizaje e intercambio de habilidades Peer-to-Peer (P2P). Permite a los usuarios comprar cursos interactivos, convertirse en mentores e intercambiar ('Swaps') habilidades directamente de forma gratuita o pagada. La plataforma fusiona herramientas de e-learning tradicionales (pizarras, currículos modulares) con un modelo de comunidad social (feed, follows), creando un ecosistema inmersivo de crecimiento profesional y personal.",
+        "challenge": "Desarrollar un sistema unificado que integre herramientas de e-learning, un modelo de economía P2P basado en intercambios (Swaps) y una comunidad social en tiempo real, todo bajo una arquitectura escalable y de alto rendimiento.",
+        "solution": "Se implementó una arquitectura Fullstack moderna con React 19, Vite y Tailwind CSS en el frontend, y Node.js, Express y Prisma (PostgreSQL) en el backend. Incluye un Motor 'Fintech' con billeteras virtuales, un módulo de Swaps para trueques de habilidades, aulas virtuales con Web Sockets para interacción en tiempo real y una estética 'Glassmorphism' premium.",
+        "features": [
+          "Flujo de Creación de Cursos Multinivel (Wizard interactivo)",
+          "Módulo de 'Swaps' P2P para trueque de habilidades",
+          "Sistema Comunitario (Community Feed, Mensajería y Notificaciones)",
+          "Pizarra Virtual y Control de Aulas con reproducción de video",
+          "Motor Financiero Interno (Wallet, Coins, Stripe, Criptomonedas)",
+          "Autenticación segura JWT y protección de roles",
+          "Inteligencia Artificial integrada (Groq SDK) para asistentes NLP"
+        ],
+        "process": [
+          "Diseño Premium 'Glassmorphism' con Tailwind",
+          "Modelado de datos avanzado con Prisma (Esquema relacional y pivotes)",
+          "Desarrollo Frontend React 19 + TypeScript + Vite",
+          "Sincronización bidireccional en tiempo real con Socket.io",
+          "Manejo avanzado multimedia en AWS S3",
+          "Implementación de arquitectura RESTful backend Zero-Discrepancy"
+        ],
+        "results": [
+          {
+            "value": "100%",
+            "label": "Tipado estricto Fullstack"
+          },
+          {
+            "value": "P2P",
+            "label": "Módulo de Swaps funcional"
+          },
+          {
+            "value": "AI",
+            "label": "Asistentes Integrados"
+          }
+        ]
+      },
+      "iahostel": {
+        "title": "IAHostel",
+        "short": "Plataforma de digitalización 360º para hostelería con integración de agentes de IA.",
+        "long": "Lideré el desarrollo técnico de IAHostel, una agencia especializada en la transformación digital del sector gastronómico (restaurantes, bares y cafés). El proyecto ofrece un ecosistema integral que incluye desarrollo web de alto rendimiento, menús QR interactivos y la implementación de agentes de IA personalizados que gestionan reservas y pedidos 24/7 a través de WhatsApp y la web, optimizando drásticamente la operativa de los negocios.",
+        "challenge": "Desarrollar una solución tecnológica que simplifique la gestión compleja de la hostelería, integrando IA y herramientas de reserva en una plataforma rápida y fácil de usar para propietarios sin conocimientos técnicos.",
+        "solution": "Se construyó una arquitectura robusta utilizando Next.js para garantizar velocidad y SEO local. Se integraron modelos de lenguaje avanzados para crear asistentes virtuales capaces de entender el lenguaje natural de los clientes para reservas y consultas.",
+        "features": [
+          "Desarrollo web optimizado para SEO local y conversión",
+          "Agentes de IA para gestión automática de reservas (WhatsApp/Web)",
+          "Integración de sistemas de pedidos online y Menús QR",
+          "Dashboard de gestión de contenido para propietarios",
+          "Optimización de presencia en Google Maps",
+          "Diseño ultra-responsive para dispositivos móviles",
+          "Automatización de flujo de trabajo para recepción de clientes",
+          "Arquitectura modular para escalabilidad de servicios"
+        ],
+        "process": [
+          "Investigación de puntos críticos en la gestión de hostelería",
+          "Diseño de interfaces enfocadas en la conversión y usabilidad",
+          "Desarrollo del frontend y backend con Next.js y Node.js",
+          "Entrenamiento e integración de agentes de IA con OpenAI",
+          "Conexión de APIs de mensajería (WhatsApp Business)",
+          "Pruebas de carga y despliegue optimizado en producción"
+        ],
+        "results": [
+          {
+            "value": "24/7",
+            "label": "Gestión de reservas automática"
+          },
+          {
+            "value": "100%",
+            "label": "Enfoque en sector hostelería"
+          },
+          {
+            "value": "AI",
+            "label": "Agentes integrados con éxito"
+          }
+        ]
+      },
+      "aether-ui": {
+        "title": "Aether UI",
+        "short": "Sistema de diseño web modular con guía de estilo, componentes reutilizables y soporte multiidioma.",
+        "long": "Aether UI es un sistema de diseño completo construido con React y Vite. Incluye tokens de diseño (colores, tipografías, sombras), una librería de componentes personalizables, páginas de documentación, una guía de principios de diseño visual y accesibilidad, y navegación UX/UI. El sistema soporta múltiples idiomas con i18next y ofrece ejemplos listos para copiar en JSX y CSS.",
+        "challenge": "Construir una librería visual reutilizable que mantenga consistencia visual, facilite el desarrollo frontend y permita documentación clara del diseño.",
+        "solution": "Sistema centralizado y modular que agrupa estilos, componentes y guías. Traducciones en archivos JSON, navegación con React Router y ejemplos visuales interactivos para facilitar la implementación.",
+        "features": [
+          "Tokens de diseño (colores, tamaños, pesos, fondos)",
+          "Componentes reutilizables: botones, tarjetas, diálogos, campos de texto",
+          "Vista previa en vivo y código de ejemplo por componente",
+          "Sistema multiidioma con i18next",
+          "Guías de estilo: tipografía, color, accesibilidad, tono",
+          "Menú flotante para navegar entre secciones",
+          "Totalmente responsive y sin backend requerido"
+        ],
+        "process": [
+          "Definición de tokens y estilos base",
+          "Diseño de estructura de carpetas escalable",
+          "Creación y documentación de componentes UI",
+          "Implementación de navegación e internacionalización",
+          "Integración del visor de código JSX + CSS",
+          "Ajustes visuales y pruebas en desktop/mobile"
+        ],
+        "results": [
+          {
+            "value": "100%",
+            "label": "Consistencia visual entre componentes"
+          },
+          {
+            "value": "2",
+            "label": "Idiomas soportados (ES/EN)"
+          },
+          {
+            "value": "0",
+            "label": "Dependencias para backend o frameworks UI externos"
+          }
+        ]
+      },
+      "Emaus-platform": {
+        "title": "Plataforma de gestión Emaús",
+        "short": "Web app para gestionar miembros, actividades y ventas con panel administrativo.",
+        "description": "Desarrollé una plataforma web con React y Node que centraliza la gestión de miembros, calendario de actividades e inscripciones, además de un módulo de catálogo, carrito e inventario. El objetivo es reemplazar procesos manuales (WhatsApp/hojas) por flujos digitales, con notificaciones y control por roles.",
+        "highlights": [
+          "Panel para miembros y administradores con permisos por rol",
+          "Autenticación JWT y sesiones seguras",
+          "Calendario interactivo e inscripciones online",
+          "Catálogo, carrito y control de inventario",
+          "Notificaciones internas y registro de asistencia",
+          "UI responsive y accesible"
+        ],
+        "features": [
+          "Gestión de información: perfiles, historial de actividades y compras",
+          "Actividades: calendario, inscripciones y listas de asistentes",
+          "Tienda: catálogo, carrito y reportes de ventas",
+          "Inventario automatizado con alertas",
+          "Seguridad: credenciales, roles y copias de seguridad",
+          "Accesible en móvil y desktop"
+        ],
+        "process": [
+          "Descubrimiento y mapeo de procesos actuales",
+          "Arquitectura: React (SPA) + Node/Express (API) + MongoDB",
+          "Diseño de UI/UX, estados y vacíos de contenido",
+          "Implementación de autenticación JWT y autorización por rol",
+          "Desarrollo de módulos (miembros, eventos, tienda, inventario)",
+          "Testing funcional/UAT y despliegue en contenedores"
+        ],
+        "problem": "La organización operaba con procesos manuales: planificación en redes/WhatsApp, inscripciones no centralizadas y ventas sin control de inventario, provocando desorganización y demoras.",
+        "impact": [
+          "Centralización de datos y automatización de tareas clave",
+          "Inscripciones y comunicación más claras y oportunas",
+          "Trazabilidad de ventas e inventario",
+          "Base para reportes y toma de decisiones"
+        ],
+        "cta": {
+          "open": "Abrir proyecto",
+          "repo": "Ver repositorio",
+          "demo": "Ver demo"
+        }
+      },
+      "aether-uif": {
+        "title": "Aether UI Figma",
+        "short": "Sistema de diseño híbrido: claridad, estructura y elegancia.",
+        "long": "Aether UI es un sistema de diseño creado en Figma que combina la precisión de Material UI con la estética visual del estilo iOS. Está pensado para proyectos web modernos, con enfoque en accesibilidad, modularidad, escalabilidad y consistencia.",
+        "challenge": "Unificar criterios visuales sin limitar la creatividad ni sacrificar la flexibilidad en productos escalables.",
+        "solution": "Diseño de principios universales, paleta de colores sobria pero expresiva, y componentes visuales personalizables con consistencia semántica.",
+        "features": [
+          "Tipografías complementarias: Roboto + Playfair Display",
+          "Paleta dual: Morado como base, azul profundo como acento",
+          "Componentes modulares reutilizables",
+          "Documentación lista para Zeroheight"
+        ],
+        "process": [
+          "Definición de principios de diseño",
+          "Exploración de paleta y contraste",
+          "Pruebas visuales en contextos oscuros y claros",
+          "Definición de escalas tipográficas y espaciales",
+          "Exportación a Figma y organización por categorías"
+        ],
+        "results": [
+          {
+            "value": "+100%",
+            "label": "Coherencia visual en productos"
+          },
+          {
+            "value": "-40%",
+            "label": "Tiempo de decisiones visuales"
+          },
+          {
+            "value": "+1",
+            "label": "Sistema adoptado por DomiByte"
+          }
+        ]
+      },
+      "developer-portfolio": {
+        "title": "Portafolio de Desarrollador Web",
+        "short": "Diseño personal para presentar perfil y servicios.",
+        "long": "Este portafolio personal fue creado para mostrar mis servicios de desarrollo web, habilidades técnicas y estilo visual. El diseño incluye secciones de presentación, servicios, contacto e integración social. Además, todos los dibujos e ilustraciones digitales que acompañan el diseño fueron creados por mí, capa por capa, en Adobe Illustrator. Aunque algunos no están actualmente implementados en el sitio, representan mi capacidad para diseñar y crear assets visuales originales, reforzando mi enfoque en la estética funcional aplicada al desarrollo frontend.",
+        "challenge": "Organizar toda la información personal y profesional en una sola página sin perder claridad visual.",
+        "solution": "Diseño de secciones bien delimitadas con jerarquía tipográfica, íconos funcionales y formulario de contacto enfocado.",
+        "features": [
+          "Página de presentación con llamado a la acción",
+          "Sección de servicios y habilidades",
+          "Formulario de contacto funcional",
+          "Diseño responsivo y accesible",
+          "Integración con redes sociales"
+        ],
+        "process": [
+          "Recolección de contenido personal y profesional",
+          "Definición de estructura de secciones",
+          "Prototipado en Figma",
+          "Testeo visual en distintos tamaños de pantalla"
+        ],
+        "results": [
+          {
+            "value": "+1",
+            "label": "Portafolio completo y funcional"
+          },
+          {
+            "value": "+100%",
+            "label": "Mejor comunicación profesional"
+          },
+          {
+            "value": "-50%",
+            "label": "Tiempo de respuesta a interesados"
+          }
+        ]
+      }
+    },
+    "viewMode": {
+      "grid": "VISTA CUADRÍCULA",
+      "list": "VISTA LISTA"
     }
   },
-
-
   "ecommerce-suite": {
     "title": "Suite E-commerce (API + Frontend)",
     "short": "Tienda online con carrito, pagos y panel de administración.",
@@ -365,78 +589,263 @@
     "short": "Interfaz limpia para métricas y reportes.",
     "long": "Diseño de panel con gráficos comparativos, filtros avanzados, estados vacíos y feedback. Enfoque en jerarquía visual y legibilidad de datos."
   },
-
-
-
   "about": {
     "title": "Sobre mí",
     "text": [
-      "Soy un Full Stack Developer profesional con especialización en Frontend y amplia experiencia en el desarrollo de aplicaciones web intuitivas, escalables y orientadas a la experiencia del usuario. Mi formación incluye sólidos conocimientos en sistemas, diseño gráfico y UX/UI, lo que me permite ofrecer soluciones digitales integrales, visualmente atractivas y funcionalmente eficientes.",
-      "Además de mis competencias técnicas, he complementado mi perfil con conocimientos en marketing digital y gestión de proyectos, lo que me permite comprender el producto desde una perspectiva estratégica...",
-      "Me destaco por mi capacidad de adaptación, pensamiento analítico y fuerte atención al detalle. Valoro profundamente el trabajo en equipo multidisciplinario...",
-      "Busco constantemente proyectos donde pueda integrar lo técnico, lo visual y lo estratégico para crear experiencias digitales memorables y orientadas a resultados."
-    ]
+      "Combino más de 8 años de experiencia en ingeniería de software full-stack, arquitectura de sistemas y ciencia de datos. A lo largo de mi trayectoria he desarrollado tanto productos desde cero para startups que requerían lanzamientos en tiempo récord, como sistemas empresariales de gran escala (incluyendo plataformas de planificación y logística para multinacionales como AB InBev).",
+      "Entiendo los dos mundos: la velocidad ágil y pragmática que necesita una startup para validar su modelo, y los estándares de seguridad, escalabilidad, tipado estricto y alta disponibilidad que exige una empresa consolidada.",
+      "Mi filosofía es simple: entregas funcionales continuas en staging cada semana, comunicación asíncrona directa sin intermediarios comerciales, y código limpio, tipado y 100% de propiedad de tu organización desde el primer día."
+    ],
+    "eyebrow": "// INGENIERO SENIOR & CONSULTOR DE SOFTWARE",
+    "sectionTitle": "CONSTRUYENDO PRODUCTOS ROBUSTOS PARA STARTUPS Y EMPRESAS",
+    "metrics": {
+      "m1Title": "8+ AÑOS & 60+ SISTEMAS",
+      "m1Sub": "Startups y proyectos empresariales",
+      "m2Title": "CERO DEUDA TÉCNICA",
+      "m2Sub": "Arquitectura modular en TypeScript & Postgres",
+      "m3Title": "COMUNICACIÓN DIRECTA",
+      "m3Sub": "Slack / Discord privado sin burocracia"
+    }
   },
   "tools": {
-  "title": "Software para Proyectos",
-  "items": {
-    "vscode": {
-      "title": "Visual Studio Code",
-      "text": "Editor de código ligero y potente para desarrollar y depurar en múltiples lenguajes."
-    },
-    "sqlserver": {
-      "title": "SQL Server",
-      "text": "Modelado relacional, T-SQL, procedimientos almacenados y optimización de consultas."
-    },
-    "mongodb": {
-      "title": "MongoDB",
-      "text": "Modelado de documentos, agregaciones, índices y rendimiento en colecciones."
-    },
-    "postman": {
-      "title": "Postman",
-      "text": "Diseño y pruebas de APIs REST, colecciones, variables de entorno y automatización."
-    },
-    "illustrator": {
-      "title": "Illustrator",
-      "text": "Ilustraciones, logotipos y gráficos vectoriales profesionales."
-    },
-    "photoshop": {
-      "title": "Photoshop",
-      "text": "Retoque fotográfico, composición y recursos gráficos para interfaces."
-    },
-    "figma": {
-      "title": "Figma",
-      "text": "Diseño colaborativo de interfaces y prototipos en tiempo real."
+    "title": "Software para Proyectos",
+    "items": {
+      "vscode": {
+        "title": "Visual Studio Code",
+        "text": "Editor de código ligero y potente para desarrollar y depurar en múltiples lenguajes."
+      },
+      "sqlserver": {
+        "title": "SQL Server",
+        "text": "Modelado relacional, T-SQL, procedimientos almacenados y optimización de consultas."
+      },
+      "mongodb": {
+        "title": "MongoDB",
+        "text": "Modelado de documentos, agregaciones, índices y rendimiento en colecciones."
+      },
+      "postman": {
+        "title": "Postman",
+        "text": "Diseño y pruebas de APIs REST, colecciones, variables de entorno y automatización."
+      },
+      "illustrator": {
+        "title": "Illustrator",
+        "text": "Ilustraciones, logotipos y gráficos vectoriales profesionales."
+      },
+      "photoshop": {
+        "title": "Photoshop",
+        "text": "Retoque fotográfico, composición y recursos gráficos para interfaces."
+      },
+      "figma": {
+        "title": "Figma",
+        "text": "Diseño colaborativo de interfaces y prototipos en tiempo real."
+      }
     }
-  }
-}
-,
+  },
+  "aiPuzzle": {
+    "title": "Verificación del Sistema",
+    "description": "Demuestra que eres humano. Conecta el pipeline de datos en el orden correcto arrastrando líneas entre los nodos.",
+    "nodes": {
+      "data": "1. Raw Data",
+      "process": "2. Processing",
+      "model": "3. AI Model",
+      "output": "4. Output"
+    },
+    "terminal": {
+      "connecting": "> Iniciando conexión de seguridad...",
+      "connected": "> Pipeline de datos establecido.",
+      "auth": "> Autenticando credenciales...",
+      "granted": "> Acceso Nivel MASTER Concedido.",
+      "decrypting": "> Desencriptando entorno visual secreto..."
+    },
+    "easterEgg": "MASTER LEVEL UNLOCKED"
+  },
+  "aiTerminal": {
+    "title": "Agent.exe",
+    "subtitle": "Interactúa con mi IA personal",
+    "initialMessage": "Iniciando sistema...\nConexión establecida con W-Agent v2.0.\nEscribe 'help' o haz clic en un comando sugerido para comenzar.",
+    "commands": {
+      "whoami": "Soy Whilmis, Desarrollador Full-Stack y Master en Ciencia de Datos. Combino el pensamiento analítico de los datos con el diseño visual para crear experiencias digitales memorables y automatizaciones eficientes.",
+      "skills": "[Cargando módulos analíticos...] -> Data & AI: Python, SQL, Machine Learning. -> Automatización: n8n (Nivel Experto), Integraciones API. -> Frontend: React, Canvas, Animaciones.",
+      "projects": "Ejecutando consulta...\nDespliegues exitosos detectados: Automatización de flujos de trabajo (n8n), Dashboards de datos interactivos, y Portafolios inmersivos. Revisa la sección Portfolio abajo.",
+      "contact": "Iniciando protocolo seguro... Envíame un correo en la sección de contacto. Estoy listo para transformar tu desafío en una solución robusta.",
+      "help": "Comandos disponibles: whoami, skills, projects, contact, clear.",
+      "error": "Error: Comando no reconocido. Escribe 'help' para ver la lista de comandos disponibles."
+    },
+    "inputPlaceholder": "Escribe un comando..."
+  },
   "contact": {
-    "title": "Contáctame",
-    "subtitle": "Trabajemos juntos, ¡ponte en contacto!",
+    "title": "HABLEMOS DE TU PRÓXIMO PROYECTO",
+    "subtitle": "Tanto si representas a una startup en fase de lanzamiento como a una empresa que busca acelerar su ingeniería o automatizar operaciones con IA, hablemos directamente sin intermediarios.",
     "text": "Las mejores ideas comienzan con una buena conversación. Si tienes un proyecto en mente o solo una chispa de inspiración, estoy aquí para transformarla en algo real. ¿Y si lo construimos juntos? Escríbeme, el primer paso ya lo diste.",
     "phoneLabel": "Teléfono de contacto",
     "phone": "Teléfono del responsable: (+34) 607 197 493",
     "emailLabel": "Email",
     "email": "Email del responsable: whilmisweb@gmail.com",
-  "form": {
-    "name": "Nombre",
-    "phone": "Teléfono",
-    "message": "Mensaje",
-    "send": "Enviar",
-    "sending": "Enviando…",
-    "sent": "Mensaje enviado. ¡Gracias!",
-    "validation": "Por favor escribe tu nombre y un mensaje (10+ caracteres).",
-    "failed": "No se pudo enviar. Intenta más tarde."
-  }
+    "form": {
+      "name": "Nombre",
+      "phone": "Teléfono / Email",
+      "company": "Empresa / Negocio",
+      "referral": "Cupón / Código de Referido",
+      "optional": "Opcional",
+      "message": "Mensaje",
+      "send": "Enviar",
+      "sending": "Enviando…",
+      "sent": "Mensaje enviado. ¡Gracias!",
+      "validation": "Por favor escribe tu nombre y un mensaje (10+ caracteres).",
+      "failed": "No se pudo enviar. Intenta más tarde."
+    },
+    "eyebrow": "// AGENDAR REUNIÓN / CONTACTO",
+    "trustBadge": "⚡ TIEMPO DE RESPUESTA: < 2 HORAS // TRATO DIRECTO CON WHILMIS",
+    "projectTypes": [
+      "MVP Launch Sprint (0 → 1) [3-4 Semanas]",
+      "AI Agents & Automatización con n8n",
+      "Fractional Tech Lead (Retainer Mensual)",
+      "Auditoría Técnica Express (72 Horas)",
+      "Otro Proyecto o Consulta Técnica"
+    ],
+    "callCta": "Agendar llamada de 15 min",
+    "packageSelectorTitle": "SELECCIONA EL MODELO O SERVICIO DE INTERÉS:",
+    "packageOptions": {
+      "mvp": "🚀 MVP Launch Sprint (3-4 Semanas)",
+      "ai": "🤖 AI Agents & Automatización n8n (1-2 Semanas)",
+      "fractional": "👑 Fractional Tech Lead (Retainer Mensual)",
+      "enterprise": "🏢 Desarrollo a Medida para Empresas",
+      "audit": "🔍 Auditoría Técnica & UX Express (72h)",
+      "custom": "💬 Consulta General / Otro Proyecto"
+    }
   },
   "footer": {
-  "tagline": "Construyamos algo increíble.",
-  "navTitle": "Mapa del sitio",
-  "contactTitle": "Contacto",
-  "socialTitle": "Redes",
-  "backToTop": "Volver arriba",
-  "rights": "Todos los derechos reservados."
-}
-
+    "tagline": "Construyamos algo increíble.",
+    "navTitle": "Mapa del sitio",
+    "contactTitle": "Contacto",
+    "socialTitle": "Redes",
+    "backToTop": "Volver arriba",
+    "rights": "Todos los derechos reservados."
+  },
+  "packages": {
+    "eyebrow": "// MODELOS DE CONTRATACIÓN // STARTUPS & EMPRESAS",
+    "title": "PAQUETES DE SPRINT & SERVICIOS EMPRESARIALES",
+    "subtitle": "Modelos de contratación flexibles y transparentes por sprints o retainers. Sin burocracia innecesaria, con entregables claros y fecha de entrega garantizada tanto para startups como para empresas.",
+    "durationLabel": "TIEMPO ESTIMADO",
+    "deliverablesLabel": "LO QUE INCLUYE ESTE MODELO:",
+    "ctaDefault": "RESERVAR SPRINT",
+    "plans": {
+      "mvp": {
+        "name": "MVP Launch Sprint (0 → 1)",
+        "tagline": "Para startups o empresas lanzando una nueva línea de producto que necesitan validar rápido.",
+        "duration": "3 a 4 Semanas",
+        "badge": "STARTUPS & INNOVACIÓN",
+        "items": [
+          "Arquitectura Full-Stack completa (React / Next.js + Node / TypeScript)",
+          "Diseño UI/UX de alta conversión con interacciones fluidas y WebGL",
+          "Base de datos optimizada (PostgreSQL / Supabase) y Autenticación segura",
+          "Integración de pasarela de pagos (Stripe / LemonSqueezy)",
+          "Despliegue automatizado en Cloud (Vercel / AWS / Docker) con CI/CD",
+          "100% de propiedad del código fuente (IP), repositorios Git y documentación"
+        ],
+        "cta": "Elegir Sprint MVP"
+      },
+      "ai": {
+        "name": "AI Agents & Automation Engine",
+        "tagline": "Automatización de procesos operativos y flujos de negocio con IA para empresas y startups activas.",
+        "duration": "1 a 2 Semanas",
+        "badge": "ALTO ROI & EFICIENCIA",
+        "items": [
+          "Agentes autónomos con LLMs (OpenAI, Anthropic, DeepSeek)",
+          "Workflows complejos con n8n (soporte, CRM, prospección de leads)",
+          "Base de datos vectorial (Vector DB) & Búsqueda semántica RAG",
+          "Webhooks y sincronización bidireccional entre herramientas en tiempo real",
+          "Dashboards de monitoreo de costes y consumo de tokens",
+          "Capacitación de uso y documentación para tu equipo de trabajo"
+        ],
+        "cta": "Elegir Automatización con IA"
+      },
+      "fractional": {
+        "name": "Fractional Tech Lead & Senior Partner",
+        "tagline": "Liderazgo técnico senior y desarrollo continuo para escalar tu producto sin contratar un CTO a tiempo completo.",
+        "duration": "Retainer Mensual Flexible",
+        "badge": "SOCIOS SELECCIONADOS (MAX 2)",
+        "items": [
+          "Sprints bisemanales de desarrollo continuo de nuevas features core",
+          "Decisiones de arquitectura técnica, seguridad y escalabilidad",
+          "Code reviews, buenas prácticas y aceleración del equipo técnico",
+          "Canal privado dedicado en Slack / Discord con respuesta en <24h",
+          "Llamadas estratégicas semanales de roadmap y arquitectura",
+          "Sin ataduras de permanencia (pausa o cancela mes a mes)"
+        ],
+        "cta": "Elegir Tech Lead Dedicado"
+      }
+    },
+    "audit": {
+      "tag": "ENTRADA RÁPIDA // 72 HORAS",
+      "title": "¿Tu producto o plataforma empresarial tiene cuellos de botella, va lento o tiene errores?",
+      "description": "Realizo una Auditoría Técnica & UX exhaustiva de tu sistema actual. Recibes un informe en video con cuellos de botella de rendimiento, seguridad de APIs y un roadmap de refactorización priorizado para tu equipo.",
+      "cta": "Solicitar Auditoría de 72h"
+    },
+    "comparison": {
+      "eyebrow": "// COMPARATIVA DE VALOR REAL",
+      "title": "¿Por qué trabajar con Whilmis frente a agencias o procesos de nómina?",
+      "subtitle": "Cómo se compara colaborar conmigo frente a una agencia tradicional o contratar en nómina interna:",
+      "headers": {
+        "feature": "Criterio",
+        "agency": "Agencia Tradicional",
+        "fulltime": "Contratar Full-Time",
+        "whilmis": "Whilmis (Senior Partner)"
+      },
+      "rows": [
+        {
+          "criterion": "Tiempo para empezar",
+          "agency": "2 a 4 semanas (reuniones y propuestas)",
+          "fulltime": "60 a 90 días (procesos de RRHH)",
+          "whilmis": "⚡ 48 a 72 horas"
+        },
+        {
+          "criterion": "Costo & Flexibilidad",
+          "agency": "$25k - $60k+ con sobrecostes ocultos",
+          "fulltime": "$120k - $180k/año + impuestos + beneficios",
+          "whilmis": "✅ Presupuesto cerrado por Sprint o Retainer mensual"
+        },
+        {
+          "criterion": "Quién programa realmente",
+          "agency": "Te venden seniors y asignan juniors",
+          "fulltime": "Incierto hasta que entra al equipo",
+          "whilmis": "🚀 Desarrollador Senior directo (8+ años de experiencia)"
+        },
+        {
+          "criterion": "Comunicación",
+          "agency": "Account managers que no tocan código",
+          "fulltime": "Reuniones diarias y burocracia interna",
+          "whilmis": "💬 Slack/Discord directo con quien escribe el código"
+        },
+        {
+          "criterion": "Velocidad de entrega",
+          "agency": "Lenta (procesos burocráticos de aprobación)",
+          "fulltime": "Variable según la curva de onboarding",
+          "whilmis": "⚡ Demos funcionales en staging cada semana"
+        }
+      ]
+    },
+    "guarantees": [
+      {
+        "icon": "code",
+        "title": "100% Propiedad del Código (IP)",
+        "desc": "Desde el primer día el código fuente, repositorios Git y claves son 100% de tu startup. Sin licencias propietarias ni dependencias bloqueantes."
+      },
+      {
+        "icon": "zap",
+        "title": "Demos Funcionales Semanales",
+        "desc": "En lugar de diapositivas o promesas abstractas, ves avances reales en un entorno de staging desplegado cada semana."
+      },
+      {
+        "icon": "shield",
+        "title": "Cero Deuda Técnica Oculta",
+        "desc": "Arquitectura modular y fuertemente tipada en TypeScript para que cualquier desarrollador futuro pueda continuar el trabajo sin fricción."
+      }
+    ],
+    "enterpriseCard": {
+      "tag": "ENTERPRISE & A MEDIDA",
+      "title": "¿Tu empresa necesita una solución a gran escala o arquitectura a medida?",
+      "description": "Desarrollo de microservicios, migración de sistemas legacy, integraciones complejas de ERP/CRM y consultoría técnica personalizada para medianas y grandes empresas.",
+      "cta": "Solicitar Propuesta para Empresa"
+    }
+  }
 }

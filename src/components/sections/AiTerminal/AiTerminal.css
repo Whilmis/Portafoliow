@@ -1,0 +1,208 @@
+/* AiTerminal now mounts inside AiPuzzle container */
+.terminal-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 800px;
+  height: 90%;
+  max-height: 550px;
+  background: rgba(9, 9, 11, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.1);
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Scanline effect */
+.terminal-window::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+
+/* Top bar (Window controls) */
+.terminal-topbar {
+  background: #18181b;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.terminal-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.terminal-buttons .btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.btn.close { background: #ff5f56; }
+.btn.minimize { background: #ffbd2e; }
+.btn.maximize { background: #27c93f; }
+
+.terminal-title {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: monospace;
+  color: #888;
+  font-size: 0.85rem;
+  padding-right: 44px; /* to balance the 3 buttons */
+}
+
+/* Terminal Body */
+.terminal-body {
+  padding: 1.5rem;
+  flex: 1; /* Take up remaining height */
+  overflow-y: auto;
+  font-family: 'Fira Code', 'Courier New', Courier, monospace;
+  font-size: 0.95rem;
+  color: #ffffff;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+.terminal-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.terminal-body::-webkit-scrollbar-track {
+  background: #09090b;
+}
+
+.terminal-body::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 4px;
+}
+
+.history-entry {
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.history-entry.user {
+  color: #fff;
+}
+
+.history-entry.system {
+  color: #ffffff;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+.prompt {
+  color: #ff0033;
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+.prompt.sys {
+  color: #ff0033;
+}
+
+.text-content {
+  opacity: 1;
+}
+
+/* Input Row */
+.terminal-input-row {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.terminal-input {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-family: 'Fira Code', 'Courier New', Courier, monospace;
+  font-size: 0.95rem;
+  outline: none;
+  flex: 1;
+}
+
+.blinking-cursor {
+  display: inline-block;
+  width: 10px;
+  height: 1.2em;
+  background-color: #ff0033;
+  animation: blink 1s step-end infinite;
+  vertical-align: text-bottom;
+  margin-left: 5px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Suggested Commands Footer */
+.terminal-footer {
+  background: #121214;
+  padding: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.suggested-cmd {
+  background: rgba(255, 0, 51, 0.1);
+  border: 1px solid rgba(255, 0, 51, 0.3);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.suggested-cmd:hover:not(:disabled) {
+  background: rgba(255, 0, 51, 0.3);
+  border-color: rgba(255, 0, 51, 0.8);
+  box-shadow: 0 0 10px rgba(255, 0, 51, 0.2);
+}
+
+.suggested-cmd:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .terminal-window {
+    width: 95%;
+    height: 95%;
+  }
+
+  .terminal-body {
+    font-size: 0.85rem;
+  }
+  
+  .terminal-footer {
+    gap: 8px;
+    padding: 0.8rem;
+  }
+  
+  .suggested-cmd {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+  }
+}

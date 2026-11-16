@@ -1,0 +1,271 @@
+/* ─────────────────────────────────────────────────────────────
+   Marco Zanata / Oakley x Fortnite Glitch Breakdown Editorial Style
+   True Pitch Black Void (#000000) + Crisp White Tracking Reticles
+   ───────────────────────────────────────────────────────────── */
+
+.mz-breakdown-root {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  overflow: hidden;
+  background: #000000;
+  font-family: var(--font-mono, "JetBrains Mono", monospace);
+  user-select: none;
+}
+
+.ag-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  cursor: grab;
+  touch-action: pan-y;
+  background: #000000;
+}
+
+.ag-canvas:active {
+  cursor: grabbing;
+}
+
+.ag-canvas canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  background: #000000 !important;
+}
+
+/* ── Delicate CRT Sensor Scanlines ────────────────────────── */
+.mz-scanlines {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.015) 0px,
+    rgba(255, 255, 255, 0.015) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  mix-blend-mode: screen;
+}
+
+/* ── Minimalist Corner Metadata ──────────────────────────── */
+.mz-meta {
+  position: absolute;
+  z-index: 5;
+  pointer-events: none;
+  font-size: 0.48rem;
+  letter-spacing: 0.10em;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.mz-meta--tl {
+  top: 10px;
+  left: 12px;
+}
+
+.mz-meta--tr {
+  top: 10px;
+  right: 12px;
+}
+
+.mz-tag {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2px 6px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 3px;
+  backdrop-filter: blur(4px);
+}
+
+/* ── Center Editorial Typography (Marco Zanata Oakley x Fortnite) ── */
+.mz-editorial-badge {
+  position: absolute;
+  bottom: 46px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  text-align: center;
+  z-index: 5;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.mz-title-main {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.4), 0 2px 4px rgba(0, 0, 0, 0.9);
+  transition: transform 0.15s ease, text-shadow 0.15s ease;
+}
+
+.mz-title-sub {
+  font-size: 0.52rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: rgba(255, 255, 255, 0.85);
+  text-transform: uppercase;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+}
+
+.mz-title-caption {
+  font-size: 0.38rem;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.35);
+  text-transform: uppercase;
+  margin-top: 3px;
+  white-space: nowrap;
+}
+
+/* Burst state for typography */
+.mz-breakdown-root.is-glitching .mz-title-main {
+  text-shadow: -2px 0 #00ffff, 2px 0 #ff0055, 0 0 16px #ffffff;
+  transform: translateX(1px);
+}
+
+/* ── Minimal Bottom Toolbar ──────────────────────────────── */
+.mz-toolbar {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 10px;
+  z-index: 6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mz-preset-group,
+.mz-toolbar-right {
+  display: flex;
+  gap: 4px;
+}
+
+.mz-preset-group {
+  padding: 2px;
+  background: rgba(0, 0, 0, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  backdrop-filter: blur(8px);
+}
+
+.mz-preset-group button,
+.mz-tool-btn {
+  font-family: inherit;
+  font-size: 0.52rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: rgba(255, 255, 255, 0.55);
+  background: transparent;
+  border: none;
+  border-radius: 12px;
+  padding: 3px 9px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mz-preset-group button:hover,
+.mz-tool-btn:hover {
+  color: #ffffff;
+}
+
+.mz-preset-group button.active {
+  color: #000000;
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.mz-tool-btn {
+  background: rgba(0, 0, 0, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+}
+
+.mz-tool-btn--hot {
+  color: #ff3344;
+  border-color: rgba(229, 9, 20, 0.4);
+}
+
+.mz-tool-btn--hot:hover {
+  background: rgba(229, 9, 20, 0.2);
+  box-shadow: 0 0 10px rgba(229, 9, 20, 0.5);
+  color: #ffffff;
+}
+
+/* ── Interactive Drag Hint ───────────────────────────────── */
+.mz-hint {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 95px);
+  z-index: 6;
+  pointer-events: none;
+  padding: 3px 9px;
+  font-size: 0.46rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  white-space: nowrap;
+  background: rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  animation: mzFloat 3s ease-in-out infinite;
+}
+
+.mz-hint span { color: #ff3344; }
+
+@keyframes mzFloat {
+  0%, 100% { transform: translate(-50%, 95px); }
+  50% { transform: translate(-50%, 90px); }
+}
+
+/* ── Loading Overlay ─────────────────────────────────────── */
+.mz-loading {
+  position: absolute;
+  inset: 0;
+  z-index: 7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #000000;
+  color: #ffffff;
+  font-size: 0.56rem;
+  letter-spacing: 0.14em;
+}
+
+.mz-loading-title {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.mz-loading-bar {
+  width: 45%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+}
+
+.mz-loading-bar span {
+  display: block;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 0 0 8px #ffffff;
+  transition: width 0.2s ease;
+}
+
+.mz-loading-pct {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.48rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mz-hint {
+    animation: none !important;
+  }
+}

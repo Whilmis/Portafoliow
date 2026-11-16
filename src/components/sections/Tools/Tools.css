@@ -1,101 +1,89 @@
 .tools {
-  padding: var(--space-xl) 0;
+  padding: 60px 0 90px 0;
   position: relative;
 }
 
-/* Patrón sutil SOLO en Tools */
-.tools::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  opacity: .7;
-
-  /* cuadrícula finita + ruido radial suave */
-  background-image:
-    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px),
-    radial-gradient(500px 250px at 15% -10%, rgba(34,197,94,0.05), transparent 60%),
-    radial-gradient(400px 200px at 85% 110%, rgba(34,197,94,0.04), transparent 60%);
-  background-size: 28px 28px, 28px 28px, auto, auto;
-  mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+.tools-header-center {
+  text-align: center;
+  margin-bottom: 2.75rem;
 }
 
-.tools > .container { position: relative; z-index: 1; }
-
-/* Grid adaptable */
-.tools-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: var(--space-lg);
-  margin-top: var(--space-lg);
+.tools-grid-modern {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
 }
 
-/* ── Ghost tiles (transparente, sin card sólida) ── */
-.tools-grid--ghost .tool-tile {
-  display: grid;
-  grid-template-columns: 64px 1fr;
+.tool-pill-card {
+  display: flex;
   align-items: center;
-  gap: var(--space-md);
-  padding: var(--space-md);
-  border-radius: var(--radius-md);
-
-  border: 1px dashed rgba(255,255,255,0.08);
-  background: transparent;
-  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+  gap: 14px;
+  background: #0d0d11;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-sm);
+  padding: 12px 20px;
+  min-width: 170px;
+  transition: all 0.25s ease;
 }
 
-.tools-grid--ghost .tool-tile:hover {
+.tool-pill-card:hover {
+  background: #14141a;
+  border-color: rgba(229, 9, 20, 0.4);
   transform: translateY(-2px);
-  border-color: rgba(34, 197, 94, 0.35);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5), 0 0 15px rgba(229, 9, 20, 0.15);
 }
 
-.tool-icon {
-  width: 64px; height: 64px;
-  display: grid; place-items: center;
-  border-radius: 14px;
-  background: radial-gradient(60px 60px at 50% 50%, rgba(34,197,94,0.08), transparent);
-  border: 1px solid rgba(255,255,255,0.06);
-}
-.tool-icon img {
-  width: 36px; height: 36px; object-fit: contain;
-  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.35));
+.tool-pill-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
-.tool-meta h3 {
-  margin-bottom: 6px;
-  color: var(--color-primary);
+.tool-pill-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: none;
+  transition: transform 0.25s ease;
+}
+
+.tool-pill-card:hover .tool-pill-icon img {
+  transform: scale(1.08);
+}
+
+.tool-pill-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.tool-pill-name {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
   font-weight: 700;
-}
-.tool-meta p {
-  color: #a9b0b5;
-  font-size: .95rem;
-  line-height: 1.5;
+  color: #f3f4f6;
+  letter-spacing: 0.04em;
+  margin: 0;
 }
 
-/* Mobile: listado con divisor (aún más liviano visualmente) */
-@media (max-width: 560px) {
-  .tools-grid--ghost .tool-tile {
-    grid-template-columns: 48px 1fr;
-    padding: 12px;
-    border: 0;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-    border-radius: 0;
-  }
-  .tool-icon {
-    width: 48px; height: 48px;
-    background: radial-gradient(48px 48px at 50% 50%, rgba(34,197,94,0.06), transparent);
-  }
+.tool-pill-desc {
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+  margin-top: 2px;
 }
 
-/* Respeta reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  .tools-grid--ghost .tool-tile,
-  .tools-grid--ghost .tool-tile:hover {
-    transition: none !important;
-    transform: none !important;
-    box-shadow: none !important;
+@media (max-width: 600px) {
+  .tools-grid-modern {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  
+  .tool-pill-card {
+    min-width: auto;
+    padding: 10px 14px;
   }
 }

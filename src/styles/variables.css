@@ -1,13 +1,23 @@
 :root {
   /* Colores */
-  --color-bg: #0f1115;
-  --color-text: #e5e7eb;
-  --color-primary: #22c55e;
-  --color-primary-dark: #1da94d;
-  --color-border: rgba(255, 255, 255, 0.1);
+  --color-bg: #070709;
+  --color-bg-secondary: #0d0d10;
+  --color-surface: #111115;
+  --color-surface-hover: #16161b;
+  --color-surface-card: #0e0e12;
+  --color-text: #f4f4f5;
+  --color-text-secondary: #a1a1aa;
+  --color-text-muted: #71717a;
+  --color-primary: #e50914;
+  --color-primary-dark: #b80710;
+  --color-primary-glow: rgba(229, 9, 20, 0.35);
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-hover: rgba(229, 9, 20, 0.4);
 
   /* Tipografía */
-  --font-main: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  --font-main: "Inter", system-ui, -apple-system, sans-serif;
+  --font-heading: "Space Grotesk", "Syne", -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
   --font-size-base: 16px;
 
   /* Espaciados */
@@ -16,12 +26,18 @@
   --space-md: 16px;
   --space-lg: 24px;
   --space-xl: 48px;
+  --space-2xl: 80px;
 
   /* Bordes */
-  --radius-sm: 6px;
-  --radius-md: 12px;
-  --radius-lg: 999px;
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
 
   /* Sombra */
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.25);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-card: 0 12px 32px -4px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 25px rgba(229, 9, 20, 0.25);
 }

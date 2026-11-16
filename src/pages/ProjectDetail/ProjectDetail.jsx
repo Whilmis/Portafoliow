@@ -39,10 +39,20 @@ export default function ProjectDetail() {
   const process   = t(`portfolio.items.${slug}.process`,  { returnObjects: true, defaultValue: [] }) || [];
   const results   = t(`portfolio.items.${slug}.results`,  { returnObjects: true, defaultValue: [] }) || [];
 
-  const categoryLabel =
-    project.category === "react-node"
-      ? t("portfolio.categories.reactNode", { defaultValue: "React / Node.js" })
-      : t("portfolio.categories.uxui", { defaultValue: "UX / UI" });
+  const categoryLabel = (() => {
+    switch (project.category) {
+      case "react-node":
+        return t("portfolio.categories.reactNode", { defaultValue: "React / Node.js" });
+      case "web3-ai":
+        return "Web3 & AI";
+      case "ai-hospitality":
+        return "AI & Hospitality";
+      case "ux-ui":
+        return t("portfolio.categories.uxui", { defaultValue: "UX / UI" });
+      default:
+        return "Full Stack";
+    }
+  })();
 
   const related = projects
     .filter((p) => p.category === project.category && p.slug !== slug)
@@ -219,7 +229,11 @@ export default function ProjectDetail() {
                       <span className="tag">
                         {r.category === "react-node"
                           ? t("portfolio.categories.reactNode", { defaultValue: "React / Node.js" })
-                          : t("portfolio.categories.uxui", { defaultValue: "UX / UI" })}
+                          : r.category === "web3-ai"
+                          ? "Web3 & AI"
+                          : r.category === "ai-hospitality"
+                          ? "AI & Hospitality"
+                          : "UX / UI"}
                       </span>
                     </div>
                   </Link>

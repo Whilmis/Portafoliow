@@ -10,25 +10,30 @@ export default function Tools() {
   return (
     <section className="tools" id="tools">
       <div className="container">
-        <Reveal variant="fade-up">
-          <h2 className="section-title">{t("tools.title")}</h2>
-        </Reveal>
+        <div className="tools-header-center">
+          <Reveal variant="fade-up">
+            <div className="tech-eyebrow">// HIGH-VELOCITY TECH STACK</div>
+            <h2 className="section-title">{t("tools.title", { defaultValue: "TOOLS & ENVIRONMENT" })}</h2>
+            <p className="tools-subtitle" style={{ color: "var(--color-text-secondary)", marginTop: "0.6rem", fontSize: "0.95rem" }}>
+              {t("tools.subtitle", { defaultValue: "Battle-tested tech stack chosen for developer velocity, sub-second latency, and horizontal scalability." })}
+            </p>
+          </Reveal>
+        </div>
 
-        <div className="tools-grid tools-grid--ghost">
+        <div className="tools-grid-modern">
           {toolOrder.map((key, idx) => {
-            // Pedimos cada texto individualmente con fallback seguro
             const title = t(`tools.items.${key}.title`, { defaultValue: key });
             const text  = t(`tools.items.${key}.text`,  { defaultValue: "" });
 
             return (
-              <Reveal key={key} variant="fade-up" delay={100 + idx * 80}>
-                <article className="tool-tile">
-                  <div className="tool-icon">
+              <Reveal key={key} variant="fade-up" delay={80 + idx * 50}>
+                <article className="tool-pill-card">
+                  <div className="tool-pill-icon">
                     <img src={toolIcons[key]} alt={title} />
                   </div>
-                  <div className="tool-meta">
-                    <h3>{title}</h3>
-                    <p>{text}</p>
+                  <div className="tool-pill-meta">
+                    <h3 className="tool-pill-name">{title}</h3>
+                    {text && <p className="tool-pill-desc">{text}</p>}
                   </div>
                 </article>
               </Reveal>
