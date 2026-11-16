@@ -5,7 +5,9 @@ import emailjs from "@emailjs/browser";
 import Reveal from "../../common/Reveal/Reveal";
 import "./Contact.css";
 
-/* IDs públicos de EmailJS */
+/* Webhook de Grupo Hormesis y credenciales de EmailJS */
+const HORMESIS_WEBHOOK_URL =
+  "https://hormesis-back-production.up.railway.app/api/workflows/webhook/10075ea2-47e2-4ab6-8aec-a3ee3715ca1a";
 const SERVICE_ID = "service_ed2rlr9";
 const TEMPLATE_ID = "template_4tzqzgl";
 const PUBLIC_KEY  = "EbEldik7lyNTXM7a4";
@@ -71,9 +73,11 @@ export default function Contact() {
       return;
     }
 
-    const templateParams = {
+    const payload = {
       name,
       phone,
+      email: phone.includes("@") ? phone : "",
+      contact: phone,
       company: company || "N/A",
       business_name: company || "N/A",
       referral: referral || "N/A",
@@ -82,18 +86,47 @@ export default function Contact() {
       service: chosenPackageLabel,
       package_key: selectedPackage,
       package_id: selectedPackage,
-      message: `[Modelo / Paquete: ${chosenPackageLabel}]${company ? `\n[Empresa / Negocio: ${company}]` : ""}${referral ? `\n[Cupón / Referido: ${referral}]` : ""}\n\n${message}`,
+      message,
+      formatted_message: `[Modelo / Paquete: ${chosenPackageLabel}]${company ? `\n[Empresa / Negocio: ${company}]` : ""}${referral ? `\n[Cupón / Referido: ${referral}]` : ""}\n\n${message}`,
       page: window.location.href,
       date: new Date().toLocaleString()
     };
 
+    const templateParams = {
+      ...payload,
+      message: payload.formatted_message
+    };
+
     try {
       setStatus("sending");
-      await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, { publicKey: PUBLIC_KEY });
+
+      // 1. Envío POST prioritario al Webhook de Grupo Hormesis
+      const webhookPromise = fetch(HORMESIS_WEBHOOK_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(payload)
+      });
+
+      // 2. Respaldo vía EmailJS para notificación instantánea por correo
+      const emailPromise = emailjs
+        .send(SERVICE_ID, TEMPLATE_ID, templateParams, { publicKey: PUBLIC_KEY })
+        .catch((err) => {
+          console.warn("EmailJS notification backup:", err);
+          return null;
+        });
+
+      const [webhookRes] = await Promise.all([webhookPromise, emailPromise]);
+
+      if (!webhookRes.ok) {
+        console.warn(`Hormesis Webhook responded with status: ${webhookRes.status}`);
+      }
+
       setStatus("success");
       formRef.current.reset();
     } catch (err) {
-      console.error(err);
+      console.error("Error submitting contact form:", err);
       setStatus("error");
       setErrMsg(
         t("contact.form.failed", {
