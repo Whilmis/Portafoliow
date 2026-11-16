@@ -1,16 +1,12 @@
 // src/sections/Contact/Contact.jsx
 import { useRef, useState, useEffect, useMemo } from "react";
 import { useTranslation } from "react-i18next";
-import emailjs from "@emailjs/browser";
 import Reveal from "../../common/Reveal/Reveal";
 import "./Contact.css";
 
-/* Webhook de Grupo Hormesis y credenciales de EmailJS */
+/* Webhook de Grupo Hormesis */
 const HORMESIS_WEBHOOK_URL =
   "https://hormesis-back-production.up.railway.app/api/workflows/webhook/10075ea2-47e2-4ab6-8aec-a3ee3715ca1a";
-const SERVICE_ID = "service_ed2rlr9";
-const TEMPLATE_ID = "template_4tzqzgl";
-const PUBLIC_KEY  = "EbEldik7lyNTXM7a4";
 
 export default function Contact() {
   const { t } = useTranslation();
@@ -92,16 +88,10 @@ export default function Contact() {
       date: new Date().toLocaleString()
     };
 
-    const templateParams = {
-      ...payload,
-      message: payload.formatted_message
-    };
-
     try {
       setStatus("sending");
 
-      // 1. Envío POST prioritario al Webhook de Grupo Hormesis
-      const webhookPromise = fetch(HORMESIS_WEBHOOK_URL, {
+      const response = await fetch(HORMESIS_WEBHOOK_URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -109,18 +99,8 @@ export default function Contact() {
         body: JSON.stringify(payload)
       });
 
-      // 2. Respaldo vía EmailJS para notificación instantánea por correo
-      const emailPromise = emailjs
-        .send(SERVICE_ID, TEMPLATE_ID, templateParams, { publicKey: PUBLIC_KEY })
-        .catch((err) => {
-          console.warn("EmailJS notification backup:", err);
-          return null;
-        });
-
-      const [webhookRes] = await Promise.all([webhookPromise, emailPromise]);
-
-      if (!webhookRes.ok) {
-        console.warn(`Hormesis Webhook responded with status: ${webhookRes.status}`);
+      if (!response.ok) {
+        throw new Error(`Webhook responded with status: ${response.status}`);
       }
 
       setStatus("success");
